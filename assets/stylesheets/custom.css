@@ -1,3 +1,15 @@
 nav {
     background-color: transparent;
 }
+
+.jumbotron {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#jumbotronText {
+    font-size: 8vw;
+    margin-top: 5%;
+}
+
