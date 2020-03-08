@@ -6,7 +6,7 @@
         <!-- Access to Bootstrap Library -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Access to Custom CSS Stylesheet -->
-        <link rel="stylesheet" href="./assets/stylesheets/custom.css">
+        <link rel="stylesheet" type="text/css" href="./assets/stylesheets/custom.css">
     </head>
     <body>
          <!-- Navigation -->
@@ -37,9 +37,13 @@
         </nav>
         <!-- Section: Landing Page -->
         <div class="jumbotron jumbotron-fluid">
-            <img class="card-img" src="./assets/images/landing.png" alt="landing page">
-            <h1 class="card-img-overlay text-right display-4" id="jumbotronText">Hi I'm Love, a web developer.</p>
-            <a class="btn btn-lg pull-right" href="#" role="button">Learn More</button>
+            <div class="d-flex flex-column landing">
+                <img class="card-img" src="./assets/images/landing.png" alt="landing page">
+                <div class="card-img-overlay text-right">
+                    <h1 id="jumbotronText">Hi I'm Love</h1>
+                    <footer class="blockquote-footer">a web developer</footer>
+                </div>
+            </div>
         </div>
 
         <!-- SCRIPTS -->
