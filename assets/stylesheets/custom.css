@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     background-color: transparent;
 }
@@ -6,10 +11,17 @@ nav {
     background-color: transparent;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.landing {
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
 }
 
 #jumbotronText {
     font-size: 8vw;
-    margin-top: 5%;
+    margin-top: 10%;
 }
-
