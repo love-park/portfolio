@@ -21,6 +21,10 @@ nav {
     align-self: flex-end;
 }
 
+.progress {
+    margin-top: 5px;
+}
+
 #jumbotronText {
     font-size: 8vw;
     margin-top: 10%;
