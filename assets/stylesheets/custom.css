@@ -15,6 +15,11 @@ nav {
     background-repeat: no-repeat;
 }
 
+.jumbotron .container-fluid {
+    margin-top: 20%;
+    margin-right: 5%;
+}
+
 .landing {
     flex-direction: column;
     justify-content: center;
@@ -22,7 +27,7 @@ nav {
 }
 
 .about {
-
+    
 }
 
 #jumbotronText {
