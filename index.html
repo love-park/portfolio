@@ -10,13 +10,13 @@
     </head>
     <body>
          <!-- Navigation -->
-         <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light">
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo.png" class="d-inline-block align-top" alt="logo" height="30px"/>
                 Love Park
             </a>
-            <!-- Toggle / Collapse Button -->
+            <!-- Toggle / Collapse Button (for Nav Items)-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,13 +47,38 @@
         </div>
         <!-- Section: About -->
         <div class="container-fluid about">
-            <!-- About: Heading -->
+            <!-- About Heading -->
             <div class="text-center">
                 <h1 class="display-5">ABOUT</h1>
             </div>
-            <!-- About: Content -->
+            <br>
+            <!-- About Content -->
             <div class="container-fluid text-center">
-                <p>Multidisciplinary Designer</p>
+                <!-- About Content: Personal -->
+                <div class="row">
+                    <div class="col-6">
+                        <p class="card-text text-left" style="font-size: 1.5vw;">from Atlanta, GA and proud of it.</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="card-text text-right" style="font-size:1.5vw;">Culinary Enthusiast, Rereader of <span p class="font-italic">The Name of the Wind</span> and the <span p class="font-italic">Harry Potter</span> series, Binge Watcher of <span p class="font-italic">The Office</span></p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card border-0">
+                            <img class="card-img" src="./assets/images/about_atlanta.png" alt="Atlanta">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-0">
+                            <img class="card-img" src="./assets/images/about_personal.png" alt="Interests">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- About Content: Multidisciplinary Developer -->
+                <h4>Multidisciplinary Developer</h4>
                 <table class="table">
                     <thead>
                         <tr>
@@ -78,55 +103,90 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <br>
+            <!-- About Content: CV -->
+            <div class="container-fluid text-center">
                 <div class="row">
-                    <div class="col-6">
-                        <table class=" table table-responsive">
-                            <tbody>
-                                <tr>
-                                    <th><img class="img-fluid" src="./assets/images/atlanta.png" height="100vh 100vw"></th>
-                                    <th><p>Atlanta Native</p></th>
-                                </tr>
-                                <tr>
-                                    <th><img src="./assets/images/atlanta.png" height="100px"></th>
-                                    <th><p>Culinary Enthusiast</p></th>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <img src="./assets/images/ga_peach.png" height="100px">
-                        <p>Atlanta Native</p>
-                        <p>Culinary Enthusiast</p>
+                    <div class="col">
+                        <img class="img-fluid w-100" src="./assets/images/about_cv.png">
                     </div>
-                    <div class="col-6">
-                        <p><span class="font-weight-bold">Analytically Attentive: </span>Effectively collects, analyzes, and utilizes qualitative and quantitative data to tell any story.<br> <span class="font-weight-light font-italic">(Experience: B.S. in Anthropology, Secondary Mathematics Teacher)</span></p>
-                        <p><span class="font-weight-bold">Consistently Delivers Results: </span>Creates and pushes products/measureables into the real world.<br> <span class="font-weight-light font-italic">(Experience: Secondary Mathematics Teacher, Summer Fellow at a nonprofit)</span></p>
-                        <p><span class="font-weight-bold">Relationship-Driven Leadership: </span>Builds positive relationships, mediates conflict, and motivates others to take action.<br><span class="font-weight-light font-italic">(Experience: Secondary Mathematics Teacher, Basketball Coach, Student Resident Advisor)</span></p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-body">
+                            <h6 class="card-title">Analytically Attentive</h6>
+                            <p class="card-text">Effectively collects, analyzes, and utilizes qualitative and quantitative data to tell any story.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-body">
+                            <h6 class="card-title">Consistently Delivers Results</h6>
+                            <p class="card-text">Creates and pushes products / measureables into the real world.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card-body">
+                            <h6 class="card-title">Relationship-Driven Leadership</h6>
+                            <p class="card-text">Builds positive relationships, mediates conflict, and motivates others to take action.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>      
         <!-- Section: Skills -->   
         <div class="container-fluid skills">
-            <!-- Skills: Heading -->
+            <!-- Skills Heading -->
             <div class="text-center">
                 <h1>SKILLS</h1>
             </div>
-            <!-- Skills: Content -->
-            <div class="row">
-                <!-- Skills: Left Column Self-Intro -->
-                <div class="col-6">
-                </div>
-                <!-- Skills: Right Column Programming Languages -->
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-right">HTML5 / CSS</p>
-                        </div>
-                        <div class="col">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Skills Content: Full Stack -->
+            <div class="container-fluid text-center">
+                <h4>Full Stack Development</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Beginner</th>
+                            <th scope="col">Elementary</th>
+                            <th scope="col">Intermediate</th>
+                            <th scope="col">Advanced</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HTML5 / CSS</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bootstrap</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Javascript / jQuery</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Java</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">SQL</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">R</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">APIs</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">SpringBoot</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Git / GitHubt</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Heroku</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    
         </div>
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
