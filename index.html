@@ -191,29 +191,29 @@
         <div class="container-fluid">
             <h1 class="text-center">CONNECT with Love</h1>
             <!-- Connect Content: Form -->
-            <form>
+            <form action="" method="post">
                 <div class="form-group row">
                     <label for="name" class="col-sm-2 col-md-1 col-form-label">Name</label>
                     <div class="col">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="name" required="required">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="email" class="col-sm-2 col-md-1 col-form-label">Email</label>
                     <div class="col">
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" id="email" required="required">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="subject" class="col-sm-2 col-md-1 col-form-label">Subject</label>
                     <div class="col">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="subject" required="required">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="message" class="col-sm-2 col-md-1 col-form-label">Message</label>
                     <div class="col">
-                        <textarea class="form-control" rows="5"></textarea>
+                        <textarea class="form-control" rows="5" id="message" required="required"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-lg btn-block btn-primary">Send</button>
