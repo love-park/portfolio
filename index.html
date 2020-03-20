@@ -13,7 +13,7 @@
         <nav class="navbar fixed-top navbar-expand-md navbar-light">
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="index.html">
-                <img src="./assets/images/logo.png" class="d-inline-block align-top" alt="logo" height="30px"/>
+                <img src="./assets/images/nav_logo.png" class="d-inline-block align-top" alt="logo" height="30px"/>
                 Love Park
             </a>
             <!-- Toggle / Collapse Button (for Nav Items)-->
@@ -49,12 +49,11 @@
         <div class="container-fluid text-center" id="about">
             <h1 class="display-5">ABOUT</h1>
             <br>
-            <!-- About Content -->
-            <div class="container-fluid">
-                <!-- About Content: Personal -->
+            <!-- About Content: Personal -->
+            <div class="container-fluid" id="padding">
                 <div class="row">
                     <div class="col-6">
-                        <p class="card-text text-left" style="font-size: 1.5vw;">from Atlanta, GA. Recommends exploring our diverse neighborhoods and local finds, such as strolling along the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
+                        <p class="card-text text-left" style="font-size: 1.5vw;">from Atlanta, GA. Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
                     </div>
                     <div class="col-6">
                         <p class="card-text text-right" style="font-size:1.5vw;">Culinary Enthusiast, Rereader of Patrick Rothfuss's <span p class="font-italic">The Name of the Wind</span> and J.K. Rowling's <span p class="font-italic">Harry Potter</span> series, Binge Watcher of NBC's adaptation of <span p class="font-italic">The Office</span></p>
@@ -72,37 +71,52 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <!-- About Content: Multidisciplinary Developer -->
+            </div>
+            <br>
+            <!-- About Content: Multidisciplinary Developer -->
+            <div class="container-fluid" id="padding">
                 <h4>Multidisciplinary Developer</h4>
+                <br>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Research</th>
-                            <th scope="col">Code</th>
-                            <th scope="col">Communication</th>
+                            <td scope="col"></td>
+                            <td scope="col">Research</td>
+                            <td scope="col">Code</td>
+                            <td scope="col">Communication</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Advanced</th>
+                            <td scope="row">Advanced</td>
+                            <td></td>
+                            <td></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCommunication.png"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Intermediate</th>
+                            <td scope="row">Intermediate</td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscResearch.png"></td>
+                            <td></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCommunication.png"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Elementary</th>
+                            <td scope="row">Elementary</td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscResearch.png"></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCode.png"></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCommunication.png"></td>
                         </tr>
                         <tr>
-                            <th scope="row">Beginner</th>
+                            <td scope="row">Beginner</td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscResearch.png"></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCode.png"></td>
+                            <td><img class="img-fluid" id="tableImage" src="./assets/images/about_multidiscCommunication.png"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <br>
             <!-- About Content: CV -->
-            <div class="container-fluid text-center">
+            <div class="container-fluid text-center" id="padding">
                 <div class="row">
                     <div class="col">
                         <img class="img-fluid w-100" src="./assets/images/about_cv.png">
@@ -134,8 +148,9 @@
         <div class="container-fluid text-center" id="skills">
             <h1>SKILLS</h1>
             <!-- Skills Content: Full Stack -->
-            <div class="container-fluid">
+            <div class="container-fluid" id="padding">
                 <h4>Full Stack Development</h4>
+                <br>
                 <table class="table">
                     <thead>
                         <tr>
@@ -143,7 +158,6 @@
                             <td scope="col">Beginner</td>
                             <td scope="col">Elementary</td>
                             <td scope="col">Intermediate</td>
-                            <td scope="col">Advanced</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -222,7 +236,7 @@
             <h1>Coming Soon</h1>
         </div>
         <!-- Section: Connect -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="connect">
             <h1 class="text-center">CONNECT with Love</h1>
             <!-- Connect Content: Form -->
             <form action="" method="post">
@@ -250,7 +264,7 @@
                         <textarea class="form-control" rows="5" id="message" required="required"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-lg btn-block btn-primary">Send</button>
+                <button type="submit" class="btn btn-lg btn-block btn-primary">Send Message</button>
             </form>
         </div>
         <!-- SCRIPTS -->
