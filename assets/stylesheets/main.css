@@ -47,13 +47,8 @@ form {
     animation-duration: 4s;
 }
 
-.visible, .invisible {
-    opacity: 0.0;
-    transition: opacity 0.5s ease;
-}
-
-.visible {
-    opacity: 1.0;
+.animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay {
+    opacity: 0;
 }
 
 #jumbotronText {
@@ -67,10 +62,6 @@ form {
     animation-name: slide
 }
 
-.anim {
-    opacity: 0;
-}
-
 @keyframes animDown {
     from {
         transform: translateY(-100px);
@@ -81,9 +72,19 @@ form {
     }
 }
 
+@keyframes animUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @keyframes animLeft {
     from {
-        transform: translateY(-100px);
+        transform: translateX(-100px);
         opacity: 0;
     } to {
         transform: translateX(0);
@@ -93,10 +94,18 @@ form {
 
 @keyframes animRight {
     from {
-        transform: translateY(100px);
+        transform: translateX(100px);
         opacity: 0;
     } to {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes stagDel {
+    from {
+        opacity: 0;
+    } to {
         opacity: 1;
     }
 }
