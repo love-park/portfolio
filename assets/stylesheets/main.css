@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: transparent; */
+}
+
+form {
+    padding: 5vh;
+}
+
+.jumbotron-fluid {
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron .container-fluid {
+    margin-top: 20%;
+    margin-right: 5%;
+}
+
+.container-fluid {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.table tbody {
+    border: none;
+}
+
+.table thead tr td {
+    border: none;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+    border: none;
+}
+
+.table tbody tr td img {
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+.visible, .invisible {
+    opacity: 0.0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1.0;
+}
+
+#jumbotronText {
+    font-size: 8vw;
+    margin-top: 10%;
+}
+
+#tableImage {
+    height: 7vw;
+    transition: 3s ease-out;
+    animation-name: slide
+}
+
+.anim {
+    opacity: 0;
+}
+
+@keyframes animDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animLeft {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animRight {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
