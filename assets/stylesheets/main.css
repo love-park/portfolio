@@ -1,14 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: white;
 }
 
-nav {
-    /* background-color: transparent; */
-}
+/* nav.scroll {
+    background-color: black;
+    color: white;
+} */
 
 form {
     padding: 5vh;
+}
+
+.navbar.stationary {
+    background: black;
+    color: white;
 }
 
 .jumbotron-fluid {
@@ -22,6 +30,10 @@ form {
 .jumbotron .container-fluid {
     margin-top: 20%;
     margin-right: 5%;
+}
+
+.typewriter > .text {
+    border-right: 0.2rem solid black;
 }
 
 .container-fluid {
@@ -60,6 +72,10 @@ form {
     height: 7vw;
     transition: 3s ease-out;
     animation-name: slide
+}
+
+#emphasize {
+    animation: stagDel 2s infinite alternate;
 }
 
 @keyframes animDown {
