@@ -39,39 +39,31 @@
             </div>
         </nav>
         <!-- Section: Landing Page -->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid panel" data-color="darkBlue">
             <div class="container-fluid text-right">
                 <h1 class="display-4">Hi I'm Love</h1>
                 <p class="lead typewriter" data-wait="3000" data-words='["full stack developer", "creative designer"]'></p>
             </div>
         </div>
         <!-- Section: About -->
-        <div class="container-fluid" id="about">
+        <div class="container-fluid panel" id="about" data-color="skyBlue">
             <h1 class="display-5 animateDown" data-delay="0.5s">ABOUT</h1>
             <br>
-            <div class="row">
-                <div class="col-6">
-                    <p class="card-text text-left animateLeft" data-delay="1.5s" style="font-size: 1.5vw;">from Atlanta, GA. Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
-                </div>
-                <div class="col-6">
-                    <p class="card-text text-right animateRight" data-delay="2.5s" style="font-size:1.5vw;">Culinary Enthusiast, Rereader of Patrick Rothfuss's <span p class="font-italic">The Name of the Wind</span> and J.K. Rowling's <span p class="font-italic">Harry Potter</span> series, Binge Watcher of NBC's adaptation of <span p class="font-italic">The Office</span></p>
-                </div>
+            <div class="row animateLeft" data-delay="1.5s">
+                <p class="card-text text-left" id="textLeft">from Atlanta, GA. Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
+                <img class="card-img" src="./assets/images/about_personal_atlanta.png" alt="Atlanta">
             </div>
-            <div class="row">
+            <div class="row animateRight" data-delay="2.5s">
                 <div class="col-6">
-                    <div class="card border-0">
-                        <img class="card-img animateLeft" data-delay="1.5s" src="./assets/images/about_personal_atlanta.png" alt="Atlanta">
-                    </div>
+                    <img class="card-img" src="./assets/images/about_personal_favorites.png" alt="Interests">
                 </div>
                 <div class="col-6">
-                    <div class="card border-0 animateRight" data-delay="2.5s">
-                        <img class="card-img" src="./assets/images/about_personal_favorites.png" alt="Interests">
-                    </div>
+                    <p class="card-text text-right" id="textRight">Culinary Enthusiast, Rereader of Patrick Rothfuss's <span p class="font-italic">The Name of the Wind</span> and J.K. Rowling's <span p class="font-italic">Harry Potter</span> series, Binge Watcher of NBC's adaptation of <span p class="font-italic">The Office</span></p>
                 </div>
             </div>
         </div>
         <!-- About Content: Multidisciplinary Developer -->
-        <div class="container-fluid">
+        <div class="container-fluid panel" data-color="gold">
             <h4 class="animateDown" data-delay="0.5s">Multidisciplinary Developer</h4>
             <br>
             <table class="table">
@@ -112,7 +104,7 @@
             </table>
         </div>
         <!-- About Content: CV -->
-        <div class="container-fluid">
+        <div class="container-fluid panel" data-color="gold">
             <div class="row">
                 <div class="col">
                     <img class="img-fluid w-100 animateDown" data-delay="0.5s" src="./assets/images/about_cv.png">
@@ -140,7 +132,7 @@
             </div>
         </div>
         <!-- Section: Skills -->  
-        <div class="container-fluid">
+        <div class="container-fluid panel" data-color="darkGreen">
             <div class="animateDown" id="skills" data-delay="0.5s">
                 <h1>SKILLS</h1>
                 <h4>Full Stack Development</h4>
@@ -238,13 +230,13 @@
             </table>
         </div>
         <!-- Section: Portfolio -->
-        <div class="container-fluid" id="portfolio">
+        <div class="container-fluid panel" id="portfolio" data-color="greyBlue">
             <h1 class="animateDown" data-delay="0.5s">PORTFOLIO</h1>
             <!-- Portfolio Content: Coming Soon -->
             <p id="emphasize">Coming Soon</p>
         </div>
         <!-- Section: Connect -->
-        <div class="container-fluid" id="connect">
+        <div class="container-fluid panel" id="connect" data-color="white">
             <h1>CONNECT with Love</h1>
             <!-- Connect Content: Form -->
             <form action="" method="post">
@@ -275,6 +267,14 @@
                 <button type="submit" class="btn btn-lg btn-block btn-primary">Send Message</button>
             </form>
         </div>
+        <footer>
+            <div class="container-fluid">
+
+            </div>
+            <div class="container-fluid">
+                2020 Copyright
+            </div>
+        </footer>
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
 }
 
 /* nav.scroll {
@@ -14,17 +12,42 @@ form {
     padding: 5vh;
 }
 
-.navbar.stationary {
-    background: black;
-    color: white;
+/* .navbar.stationary {
+    background: white;
+    color: black;
+} */
+
+.panel {
+    justify-content: space-around;
+}
+
+.color-darkBlue {
+    background-color: #476080;
+}
+
+.color-skyBlue {
+    background-color: #FFFFE6;
+}
+
+.color-gold {
+    background-color: #FFFFFF;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-greyBlue {
+    background-color: #A1ACB3;
+}
+
+.color-white {
+    background-color: #FCFFFF;
 }
 
 .jumbotron-fluid {
     background-color: transparent;
     height: 100vh;
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .jumbotron .container-fluid {
@@ -66,6 +89,18 @@ form {
 #jumbotronText {
     font-size: 8vw;
     margin-top: 10%;
+}
+
+#textLeft {
+    font-size: 2vw;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#textRight {
+    font-size: 2vw;
+    padding-top: 5%;
+    padding-right: 3%;
 }
 
 #tableImage {
