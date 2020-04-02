@@ -39,14 +39,26 @@
             </div>
         </nav>
         <!-- Section: Landing Page -->
-        <div class="jumbotron jumbotron-fluid panel" data-color="darkBlue">
-            <div class="container-fluid text-right">
-                <h1 class="display-4">Hi I'm Love</h1>
-                <p class="lead typewriter" data-wait="3000" data-words='["full stack developer", "creative designer"]'></p>
+        <div class="jumbotron jumbotron-fluid panel" id="landing" data-color="landing">
+            <div class="row">
+                <div class="col-4">
+                    <div class="coffee">
+                        <div class="coffeeSmoke coffeeSmokeOne"></div>
+                        <div class="coffeeSmoke coffeeSmokeTwo"></div>
+                        <div class="coffeeSmoke coffeeSmokeThree"></div>
+                        <div class="coffeeCup"></div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="intro">
+                        <h1 class="display-4 text-right">Hi I'm Love</h1>
+                        <p class="lead text-right typewriter" data-wait="3000" data-words='["- full stack developer", "- creative designer"]'></p> 
+                    </div>
+                </div> 
             </div>
         </div>
         <!-- Section: About -->
-        <div class="container-fluid panel" id="about" data-color="skyBlue">
+        <div class="container-fluid panel" id="about" data-color="about">
             <h1 class="display-5 animateDown" data-delay="0.5s">ABOUT</h1>
             <br>
             <div class="row animateLeft" data-delay="1.5s">
@@ -63,7 +75,7 @@
             </div>
         </div>
         <!-- About Content: Multidisciplinary Developer -->
-        <div class="container-fluid panel" data-color="gold">
+        <div class="container-fluid panel" data-color="cvskills">
             <h4 class="animateDown" data-delay="0.5s">Multidisciplinary Developer</h4>
             <br>
             <table class="table">
@@ -102,9 +114,8 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <!-- About Content: CV -->
-        <div class="container-fluid panel" data-color="gold">
+            <br>
+            <br>
             <div class="row">
                 <div class="col">
                     <img class="img-fluid w-100 animateDown" data-delay="0.5s" src="./assets/images/about_cv.png">
@@ -132,7 +143,7 @@
             </div>
         </div>
         <!-- Section: Skills -->  
-        <div class="container-fluid panel" data-color="darkGreen">
+        <div class="container-fluid panel" data-color="skills">
             <div class="animateDown" id="skills" data-delay="0.5s">
                 <h1>SKILLS</h1>
                 <h4>Full Stack Development</h4>
@@ -230,13 +241,13 @@
             </table>
         </div>
         <!-- Section: Portfolio -->
-        <div class="container-fluid panel" id="portfolio" data-color="greyBlue">
+        <div class="container-fluid panel" id="portfolio" data-color="portfolio">
             <h1 class="animateDown" data-delay="0.5s">PORTFOLIO</h1>
             <!-- Portfolio Content: Coming Soon -->
             <p id="emphasize">Coming Soon</p>
         </div>
         <!-- Section: Connect -->
-        <div class="container-fluid panel" id="connect" data-color="white">
+        <div class="container-fluid panel" id="connect" data-color="contact">
             <h1>CONNECT with Love</h1>
             <!-- Connect Content: Form -->
             <form action="" method="post">
@@ -267,13 +278,13 @@
                 <button type="submit" class="btn btn-lg btn-block btn-primary">Send Message</button>
             </form>
         </div>
-        <footer>
-            <div class="container-fluid">
-
+        <div class="footer">
+            <div class="progress-container">
+                <div class="progress-bar" id="bar"></div>
             </div>
-            <div class="container-fluid">
-                2020 Copyright
-            </div>
+        </div>
+        <footer class="text-center">
+            <p>&copy; 2020 Love Park<br>All Rights Reserved</p>
         </footer>
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

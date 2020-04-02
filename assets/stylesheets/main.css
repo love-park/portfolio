@@ -3,46 +3,46 @@
     padding: 0;
 }
 
-/* nav.scroll {
-    background-color: black;
+body {
     color: white;
-} */
+    background-color: black;
+    transition: background-color 1s ease;
+}
 
 form {
     padding: 5vh;
 }
 
-/* .navbar.stationary {
-    background: white;
-    color: black;
-} */
+footer {
+    background-color: transparent;
+}
 
 .panel {
     justify-content: space-around;
 }
 
-.color-darkBlue {
-    background-color: #476080;
+.color-landing {
+    background-color: #CEE4ED;
 }
 
-.color-skyBlue {
-    background-color: #FFFFE6;
+.color-about {
+    background-color: #BCCBD3;
 }
 
-.color-gold {
-    background-color: #FFFFFF;
+.color-cvskills {
+    background-color: #83929F;
 }
 
-.color-black {
-    background-color: black;
+.color-skills {
+    background-color: #5C6B73;
 }
 
-.color-greyBlue {
-    background-color: #A1ACB3;
+.color-portfolio {
+    background-color: #253237;
 }
 
-.color-white {
-    background-color: #FCFFFF;
+.color-contact {
+    background-color: #253237;
 }
 
 .jumbotron-fluid {
@@ -55,12 +55,75 @@ form {
     margin-right: 5%;
 }
 
+.intro {
+    padding-top: 30%;
+    padding-right: 20%;
+}
+
 .typewriter > .text {
     border-right: 0.2rem solid black;
 }
 
+.coffee {
+    margin-left: 50%;
+}
+
+.coffee:before {
+    content: "";
+}
+
+.coffeeCup {
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    border-radius: 0 0 70px 70px / 0 0 100px 100px;
+}
+
+.coffeeCup::after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5%;
+    right: -17%;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.coffeeSmoke {
+    width: 3%;
+    height: 10%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.coffeeSmokeOne {
+    opacity: 0;
+    bottom: 20%;
+    left: 60%;
+    animation: smokeOne 3s 4s linear infinite;
+}
+
+.coffeeSmokeTwo {
+    opacity: 0;
+    bottom: 30%;
+    left: 70%;
+    animation: smokeTwo 3s 5s linear infinite;
+}
+
+.coffeeSmokeThree {
+    opacity: 0;
+    bottom: 60%;
+    left: 80%;
+    animation: smokeTwo 3s 6s linear infinite;
+}
+
 .container-fluid {
     padding-top: 10vh;
+    padding-bottom: 10vh;
     text-align: center;
 }
 
@@ -84,6 +147,26 @@ form {
 
 .animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay {
     opacity: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 5px;
+    background: white;
+    width: 0%;
 }
 
 #jumbotronText {
@@ -111,6 +194,42 @@ form {
 
 #emphasize {
     animation: stagDel 2s infinite alternate;
+}
+
+#landing {
+    color: #BCCBD3;
+}
+
+@keyframes smokeOne {
+    0% {
+        bottom: 10%;
+        opacity: 0;
+    } 40% {
+        bottom: 20%;
+        opacity: 0.5;
+    } 80% {
+        bottom: 40%;
+        opacity: 0.3;
+    } 100% {
+        bottom: 40%;
+        opacity: 0;
+    }
+}
+
+@keyframes smokeTwo {
+    0% {
+        bottom: 15%;
+        opacity: 0;
+    } 40% {
+        bottom: 25%;
+        opacity: 0.5;
+    } 80% {
+        bottom: 35%;
+        opacity: 0.3;
+    } 100% {
+        bottom: 35%;
+        opacity: 0;
+    }
 }
 
 @keyframes animDown {

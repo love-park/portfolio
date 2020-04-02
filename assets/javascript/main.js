@@ -1,20 +1,3 @@
-// Nav: change color on scroll
-$(window).scroll(function() {
-    var scrollPosition = 0;
-    var navChange = $('#navbar');
-    var offset = navChange.offset();
-    if (navChange.length) {
-        $(document).scroll(function() {
-            scrollPosition = $(this).scrollTop();
-            if (scrollPosition > offset.top) {
-                $('.navbar').addClass('stationary');
-            } else {
-                $('.navbar').removeClass('stationary');
-            }
-        })
-    }
-});
-
 // Typewriter Script
 class Typewriter {
     constructor(textElement, words, wait = 3000) {
@@ -71,7 +54,7 @@ function init() {
     new Typewriter(textElement, words, wait);
 }
 
-// Animation Script
+// Animation Divs Script
 if ("IntersectionObserver" in window) {
     // selects all elements with an animation class
     const items = document.querySelectorAll('.animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay');
@@ -106,4 +89,34 @@ if ("IntersectionObserver" in window) {
     items.forEach(item => {
         observer.observe(item);
     });
+}
+
+// Background Scroll Colors
+$(window).scroll(function() {
+    // begin changing a third earlier than the scroll position
+    var scroll = $(window).scrollTop() + ($(window).height() / 3);
+
+    $('.panel').each(function() {
+        // if position is within panel range
+        if (($(this).position().top) <= scroll && ($(this).position().top + $(this).height() > scroll)) {
+            // remove all classes on body with color-X
+            $('body').removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+            });
+            // add class of currently active div
+            $('body').addClass('color-' + $(this).data('color'));
+        }
+
+    });
+}).scroll();
+
+// Progress Bar on Scroll
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    var scroller = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // convert percentage of where the user is with regards to current location within page
+    var scrolled = (scroller / height) * 100;
+    document.getElementById("bar").style.width = scrolled + "%";
 }
