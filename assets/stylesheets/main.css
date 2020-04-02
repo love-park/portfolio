@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: #253237;
 }
 
 body {
@@ -22,37 +23,32 @@ footer {
 }
 
 .color-landing {
-    background-color: #CEE4ED;
+    background-color: #E5FDFF;
 }
 
 .color-about {
-    background-color: #BCCBD3;
+    background-color: #D9F9FC;
 }
 
 .color-cvskills {
-    background-color: #83929F;
+    background-color: #D9F9FC;
 }
 
 .color-skills {
-    background-color: #5C6B73;
+    background-color: #CFF4F7;
 }
 
 .color-portfolio {
-    background-color: #253237;
+    background-color: #D9F9FC;
 }
 
 .color-contact {
-    background-color: #253237;
+    background-color: #E5FDFF;
 }
 
 .jumbotron-fluid {
     background-color: transparent;
     height: 100vh;
-}
-
-.jumbotron .container-fluid {
-    margin-top: 20%;
-    margin-right: 5%;
 }
 
 .intro {
@@ -61,7 +57,7 @@ footer {
 }
 
 .typewriter > .text {
-    border-right: 0.2rem solid black;
+    border-right: 0.2rem solid #5C6B73;
 }
 
 .coffee {
@@ -77,7 +73,7 @@ footer {
     height: 30%;
     position: absolute;
     bottom: 0;
-    background-color: white;
+    background-color: #253237;
     border-radius: 0 0 70px 70px / 0 0 100px 100px;
 }
 
@@ -88,7 +84,7 @@ footer {
     position: absolute;
     top: 5%;
     right: -17%;
-    border: 5px solid white;
+    border: 5px solid #253237;
     border-radius: 50%;
 }
 
@@ -97,7 +93,7 @@ footer {
     height: 10%;
     position: absolute;
     border-radius: 5px;
-    background-color: white;
+    background-color: #5C6B73;
 }
 
 .coffeeSmokeOne {
@@ -111,20 +107,76 @@ footer {
     opacity: 0;
     bottom: 30%;
     left: 70%;
-    animation: smokeTwo 3s 5s linear infinite;
+    animation: smokeTwo 3s 4s linear infinite;
 }
 
 .coffeeSmokeThree {
     opacity: 0;
     bottom: 60%;
     left: 80%;
-    animation: smokeTwo 3s 6s linear infinite;
+    animation: smokeTwo 3s 5s linear infinite;
 }
 
 .container-fluid {
     padding-top: 10vh;
     padding-bottom: 10vh;
     text-align: center;
+}
+
+.imgHov {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imgHov .imgHovBG {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.imgHovcontent {
+    width: 100%;
+}
+
+.imgHovDetails {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.imgHov:hover .imgHovDetails {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.imgHovDetails p {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+    top: 80%;
 }
 
 .table tbody {
@@ -169,6 +221,18 @@ footer {
     width: 0%;
 }
 
+.btn-primary {
+    background-color: #E5FDFF;
+    color: #253237;
+    border-color: #253237;
+}
+
+.btn-primary:hover {
+    background-color: #253237;
+    color: #E5FDFF;
+    border-color: #E5FDFF;
+}
+
 #jumbotronText {
     font-size: 8vw;
     margin-top: 10%;
@@ -193,11 +257,7 @@ footer {
 }
 
 #emphasize {
-    animation: stagDel 2s infinite alternate;
-}
-
-#landing {
-    color: #BCCBD3;
+    animation: stagDel 1.5s infinite alternate;
 }
 
 @keyframes smokeOne {
@@ -208,7 +268,7 @@ footer {
         bottom: 20%;
         opacity: 0.5;
     } 80% {
-        bottom: 40%;
+        bottom: 30%;
         opacity: 0.3;
     } 100% {
         bottom: 40%;
