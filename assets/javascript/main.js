@@ -43,9 +43,8 @@ class Typewriter {
         setTimeout(() => this.type(), typeSpeed);
     }
 }
-// initialize on DOM load
+// Typewriter: Initialize on DOM load
 document.addEventListener('DOMContentLoaded', init);
-
 function init() {
     const textElement = document.querySelector('.typewriter');
     const words = JSON.parse(textElement.getAttribute('data-words'));
@@ -65,19 +64,19 @@ if ("IntersectionObserver" in window) {
             if (entry.intersectionRatio > 0) {
                 // specifies which class runs the specified keyframe/animation, runs animation for that item once
                 if (entry.target.classList.contains('animateDown')) {
-                    entry.target.style.animation = `animDown 1s ${entry.target.dataset.delay} forwards ease-out`;
+                    entry.target.style.animation = `animDown 1s ${entry.target.dataset.delay} forwards`;
                     observer.unobserve(entry.target);
                 } else if (entry.target.classList.contains('animateUp')) {
-                    entry.target.style.animation = `animUp 1s ${entry.target.dataset.delay} forwards ease-out`;
+                    entry.target.style.animation = `animUp 1s ${entry.target.dataset.delay} forwards`;
                     observer.unobserve(entry.target);
                 } else if (entry.target.classList.contains('animateLeft')) {
-                    entry.target.style.animation = `animLeft 1s ${entry.target.dataset.delay} forwards ease-out`;
+                    entry.target.style.animation = `animLeft 1s ${entry.target.dataset.delay} forwards`;
                     observer.unobserve(entry.target);
                 } else if (entry.target.classList.contains('animateRight')) {
-                    entry.target.style.animation = `animRight 1s ${entry.target.dataset.delay} forwards ease-out`;
+                    entry.target.style.animation = `animRight 1s ${entry.target.dataset.delay} forwards`;
                     observer.unobserve(entry.target);
                 } else if (entry.target.classList.contains('stagDelay')) {
-                    entry.target.style.animation = `stagDel 1s ${entry.target.dataset.delay} forwards ease-out`;
+                    entry.target.style.animation = `stagDel 1s ${entry.target.dataset.delay} forwards`;
                     observer.unobserve(entry.target);
                 }
             } else {
@@ -95,7 +94,6 @@ if ("IntersectionObserver" in window) {
 $(window).scroll(function() {
     // begin changing a third earlier than the scroll position
     var scroll = $(window).scrollTop() + ($(window).height() / 3);
-
     $('.panel').each(function() {
         // if position is within panel range
         if (($(this).position().top) <= scroll && ($(this).position().top + $(this).height() > scroll)) {
@@ -106,13 +104,11 @@ $(window).scroll(function() {
             // add class of currently active div
             $('body').addClass('color-' + $(this).data('color'));
         }
-
     });
 }).scroll();
 
 // Progress Bar on Scroll
 window.onscroll = function() {myFunction()};
-
 function myFunction() {
     var scroller = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;

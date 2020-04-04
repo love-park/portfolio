@@ -5,6 +5,8 @@
         <title>Love's Portfolio</title>
         <!-- Access to Bootstrap Library -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Access to Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
         <!-- Access to Custom CSS Stylesheet -->
         <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
     </head>
@@ -41,68 +43,42 @@
         <!-- Section: Landing Page -->
         <div class="jumbotron jumbotron-fluid panel" id="landing" data-color="landing">
             <div class="row">
-                <div class="col-4">
-                    <div class="coffee">
-                        <div class="coffeeSmoke coffeeSmokeOne"></div>
-                        <div class="coffeeSmoke coffeeSmokeTwo"></div>
-                        <div class="coffeeSmoke coffeeSmokeThree"></div>
-                        <div class="coffeeCup"></div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="intro">
+                <div class="col">
                         <h1 class="display-4 text-right">Hi I'm Love</h1>
-                        <p class="lead text-right typewriter" data-wait="3000" data-words='["- full stack developer", "- creative designer"]'></p> 
-                    </div>
+                        <p class="lead text-right typewriter" data-wait="3000" data-words='["- full stack developer", "- creative designer", "- effective communicator"]'></p> 
                 </div> 
             </div>
+            <a class="bottomBanner text-center btn-block" href="#about">
+                <p>Continue to learn more about Love!</p><i class="fas fa-chevron-down" id="emphasize"></i>
+            </a>
         </div>
         <!-- Section: About -->
         <div class="container-fluid panel" id="about" data-color="about">
-            <h1 class="display-5 animateDown" data-delay="0.5s">ABOUT</h1>
+            <h2 class="display-5 animateDown" data-delay="0.5s">ABOUT</h2>
             <br>
             <div class="row animateLeft" data-delay="1.5s">
-                <p class="card-text text-left" id="textLeft">from Atlanta, GA. Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
+                <p class="card-text text-left" id="textLeft">from <span>Atlanta, GA.</span><br>Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
                 <img class="card-img" src="./assets/images/about_personal_atlanta.png" alt="Atlanta">
             </div>
             <br>
-            <!-- <div class="row animateRight" data-delay="2.5s"> -->
-            <div class="row">
-                <div class="col-2">
+            <div class="row animateRight" data-delay="2.5s">
+                <div class="col-6">
                     <div class="imgHov">
                         <div class="imgHovBG"></div>
-                        <img class="card-img imgHovContent" src="./assets/images/about_personal_bears.png" alt="Interests">
+                        <img class="card-img imgHovContent" src="./assets/images/about_personal_interests.png" alt="Interests">
                         <div class="imgHovDetails fadeIn-bottom">
-                            <p>"Bears,</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="imgHov">
-                        <div class="imgHovBG"></div>
-                        <img class="card-img imgHovContent" src="./assets/images/about_personal_beets.png" alt="Interests">
-                        <div class="imgHovDetails fadeIn-bottom">
-                            <p>Beets,</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="imgHov">
-                        <div class="imgHovBG"></div>
-                        <img class="card-img imgHovContent" src="./assets/images/about_personal_battlestar.png" alt="Interests">
-                        <div class="imgHovDetails fadeIn-bottom">
-                            <p>Battlestar Galactica"</p>
+                            <p>"Bears, Beets, Battlestar Galactica"<br>-Jim Halpert, The Office</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
-                    <p class="card-text text-right" id="textRight">Culinary Enthusiast,<br>Rereader of Rothfuss's <span p class="font-italic">The Kingkiller Chronicles</span> and Rowling's <span p class="font-italic">Harry Potter</span> series,<br>Binge Watcher of NBC's <span p class="font-italic">The Office</span></p>
+                    <p class="card-text text-right" id="textRight"><span>Culinary Enthusiast<br>Rereader</span> of Rothfuss's <span p class="font-italic">The Kingkiller Chronicle</span>, Rowling's <span p class="font-italic">Harry Potter</span> series, and Brown's R. Langdon series<br><span>Current Marathon:</span> NBC's <span p class="font-italic">The Office</span></p>
                 </div>
             </div>
         </div>
         <!-- About Content: Multidisciplinary Developer -->
         <div class="container-fluid panel" id="cvskills" data-color="cvskills">
-            <h4 class="animateDown" data-delay="0.5s">Multidisciplinary Developer</h4>
+            <h3 class="animateDown fontLabel" data-delay="0.5s">Multidisciplinary Developer</h3>
             <br>
             <table class="table">
                 <thead>
@@ -147,22 +123,22 @@
                     <img class="img-fluid w-100 animateDown" data-delay="0.5s" src="./assets/images/about_cv.png">
                 </div>
             </div>
-            <div class="row stagDelay" data-delay="1.5s">
+            <div class="row stagDelay" data-delay="1s">
                 <div class="col-4">
                     <div class="card-body">
-                        <h6 class="card-title">Analytically Attentive</h6>
+                        <h6 class="card-title fontLabel">Analytically Attentive</h6>
                         <p class="card-text">Effectively collects, analyzes, and utilizes qualitative and quantitative data to tell any story.</p>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card-body">
-                        <h6 class="card-title">Consistently Delivers Results</h6>
+                        <h6 class="card-title fontLabel">Consistently Delivers Results</h6>
                         <p class="card-text">Creates and pushes products / measureables into the real world.</p>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card-body">
-                        <h6 class="card-title">Relationship-Driven Leadership</h6>
+                        <h6 class="card-title fontLabel">Relationship-Driven Leadership</h6>
                         <p class="card-text">Builds positive relationships, mediates conflict, and motivates others to take action.</p>
                     </div>
                 </div>
@@ -171,11 +147,13 @@
         <!-- Section: Skills -->  
         <div class="container-fluid panel" id="skills" data-color="skills">
             <div class="animateDown" data-delay="0.5s">
-                <h1>SKILLS</h1>
-                <h4>Full Stack Development</h4>
+                <h2>SKILLS</h2>
+                <h3>Full Stack Development</h3>
             </div>
             <br>
-            <h5 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h5>
+            <br>
+            <br>
+            <h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
             <table class="table">
                 <thead>
                     <tr class="stagDelay" data-delay="0.5s">
@@ -228,7 +206,9 @@
                 </tbody>
             </table>
             <br>
-            <h5 class="animateDown" data-delay="1s">Frameworks, Platforms, Version Control, and other tools</h5>
+            <br>
+            <br>
+            <h4 class="animateDown" data-delay="1s">Frameworks, Platforms, Version Control, and other tools</h4>
             <table class="table">
                 <thead>
                     <tr class="stagDelay" data-delay="0.5s">
@@ -269,13 +249,25 @@
         </div>
         <!-- Section: Portfolio -->
         <div class="container-fluid panel" id="portfolio" data-color="portfolio">
-            <h1 class="animateDown" data-delay="0.5s">PORTFOLIO</h1>
-            <!-- Portfolio Content: Coming Soon -->
-            <p id="emphasize">Coming Soon</p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="coffee">
+                        <div class="coffeeSmoke coffeeSmokeOne"></div>
+                        <div class="coffeeSmoke coffeeSmokeTwo"></div>
+                        <div class="coffeeSmoke coffeeSmokeThree"></div>
+                        <div class="coffeeCup"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2 class="animateDown" data-delay="0.5s">PORTFOLIO</h2>
+                    <!-- Portfolio Content: Coming Soon -->
+                    <h4 id="emphasize">Coming Soon</h4>
+                </div>
+            </div>
         </div>
         <!-- Section: Connect -->
         <div class="container-fluid panel" id="connect" data-color="contact">
-            <h1>CONNECT with Love</h1>
+            <h2>Connect with Love</h2>
             <!-- Connect Content: Form -->
             <form action="" method="post">
                 <div class="form-group row">
@@ -305,13 +297,21 @@
                 <button type="submit" class="btn btn-lg btn-block btn-primary">Send Message</button>
             </form>
         </div>
+        <!-- Section: Footer -->
         <div class="footer">
             <div class="progress-container">
                 <div class="progress-bar" id="bar"></div>
             </div>
         </div>
-        <footer class="text-center">
-            <p>&copy; 2020 Love Park<br>All Rights Reserved</p>
+        <footer>
+            <div class="row">
+                <div class="col-6 text-left">
+                    <p>&copy; 2020 Love Park</p>
+                </div>
+                <div class="col-6 text-right">
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
         </footer>
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -1,13 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    color: #253237;
+    color: #628286;
+    font-family: Courier New;
 }
 
 body {
-    color: white;
     background-color: black;
     transition: background-color 1s ease;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    font-size: 8vw;
+    color: #628286;
 }
 
 form {
@@ -18,32 +27,40 @@ footer {
     background-color: transparent;
 }
 
+footer p {
+    color: #C2D3D2;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-toggler-icon {
+    color: black;
+}
+
 .panel {
     justify-content: space-around;
 }
 
 .color-landing {
-    background-color: #E5FDFF;
+    background-color: #F7F9FB;
 }
 
 .color-about {
-    background-color: #D9F9FC;
+    background-color: #DEF2F1;
 }
 
 .color-cvskills {
-    background-color: #D9F9FC;
+    background-color: #DEF2F1;
 }
 
 .color-skills {
-    background-color: #CFF4F7;
+    background-color: #1F2833;
 }
 
 .color-portfolio {
-    background-color: #D9F9FC;
+    background-color: #1F2833;
 }
 
 .color-contact {
-    background-color: #E5FDFF;
+    background-color: #1F2833;
 }
 
 .jumbotron-fluid {
@@ -51,70 +68,22 @@ footer {
     height: 100vh;
 }
 
-.intro {
-    padding-top: 30%;
-    padding-right: 20%;
+.text {
+    color: #628286;
 }
 
 .typewriter > .text {
-    border-right: 0.2rem solid #5C6B73;
+    border-right: 0.2rem solid #628286;
 }
 
-.coffee {
-    margin-left: 50%;
-}
-
-.coffee:before {
-    content: "";
-}
-
-.coffeeCup {
-    width: 40%;
-    height: 30%;
+.bottomBanner {
     position: absolute;
-    bottom: 0;
-    background-color: #253237;
-    border-radius: 0 0 70px 70px / 0 0 100px 100px;
+    bottom: 10px;
+    line-height: 3%;
 }
 
-.coffeeCup::after {
-    content: "";
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    top: 5%;
-    right: -17%;
-    border: 5px solid #253237;
-    border-radius: 50%;
-}
-
-.coffeeSmoke {
-    width: 3%;
-    height: 10%;
-    position: absolute;
-    border-radius: 5px;
-    background-color: #5C6B73;
-}
-
-.coffeeSmokeOne {
-    opacity: 0;
-    bottom: 20%;
-    left: 60%;
-    animation: smokeOne 3s 4s linear infinite;
-}
-
-.coffeeSmokeTwo {
-    opacity: 0;
-    bottom: 30%;
-    left: 70%;
-    animation: smokeTwo 3s 4s linear infinite;
-}
-
-.coffeeSmokeThree {
-    opacity: 0;
-    bottom: 60%;
-    left: 80%;
-    animation: smokeTwo 3s 5s linear infinite;
+.bottomBanner:hover {
+    text-decoration: none;
 }
 
 .container-fluid {
@@ -130,7 +99,7 @@ footer {
 }
 
 .imgHov .imgHovBG {
-    background: rgba(0, 0, 0, 0.7);
+    background: #D7EAE9;
     position: absolute;
     width: 100%;
     left: 0;
@@ -164,19 +133,39 @@ footer {
     transition: all 0.5s ease-in-out 0s;
 }
 
+.imgHov:hover .imgHovBG {
+    opacity: 0.7;
+}
+
 .imgHov:hover .imgHovDetails {
-    top: 50%;
+    top: 60%;
     left: 50%;
     opacity: 1;
 }
 
 .imgHovDetails p {
-    color: #fff;
-    font-size: 0.8em;
+    color: black;
+    font-size: 2vh;
 }
 
 .fadeIn-bottom {
     top: 80%;
+}
+
+h3 .fontLabel, h6 .fontLabel {
+    color: black;
+}
+
+h4 {
+    color: #C2D3D2;;
+}
+
+p {
+    color: black;
+}
+
+.font-italic {
+    color: black;
 }
 
 .table tbody {
@@ -185,11 +174,13 @@ footer {
 
 .table thead tr td {
     border: none;
+    color: #C2D3D2;
 }
 
 .table tbody tr td {
     vertical-align: middle;
     border: none;
+    color: #C2D3D2;
 }
 
 .table tbody tr td img {
@@ -197,8 +188,90 @@ footer {
     animation-duration: 4s;
 }
 
+.fas {
+    font-size: 3vw;
+    transition: 3s ease-out;
+    animation-name: slide
+}
+
 .animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay {
     opacity: 0;
+}
+
+.coffee {
+    margin-left: 20%;
+}
+
+.coffee:before {
+    content: "";
+}
+
+.coffeeCup {
+    width: 30%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    background-color: #D8C3A5;
+    border-radius: 0 0 70px 70px / 0 0 100px 100px;
+}
+
+.coffeeCup::after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5%;
+    right: -17%;
+    border: 8px solid #D8C3A5;
+    border-radius: 50%;
+}
+
+.coffeeSmoke {
+    width: 2.5%;
+    height: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #EAE7DC;
+}
+
+.coffeeSmokeOne {
+    opacity: 0;
+    left: 28%;
+    animation: smokeOne 3s 4s linear infinite;
+}
+
+.coffeeSmokeTwo {
+    opacity: 0;
+    left: 36%;
+    animation: smokeTwo 3s 4s linear infinite;
+}
+
+.coffeeSmokeThree {
+    opacity: 0;
+    left: 44%;
+    animation: smokeTwo 3s 5s linear infinite;
+}
+
+.form-control {
+    background-color: #C2D3D2;
+    opacity: 1;
+    color: black;
+}
+
+.form-control:focus {
+    color: black;   
+}
+
+.btn-primary {
+    background-color: #C2D3D2;
+    color: #253237;
+    border-color: #253237;
+}
+
+.btn-primary:hover {
+    background-color: #628286;
+    color: #C2D3D2;
+    border-color: #E5FDFF;
 }
 
 .footer {
@@ -217,20 +290,8 @@ footer {
 
 .progress-bar {
     height: 5px;
-    background: white;
+    background: #628286;
     width: 0%;
-}
-
-.btn-primary {
-    background-color: #E5FDFF;
-    color: #253237;
-    border-color: #253237;
-}
-
-.btn-primary:hover {
-    background-color: #253237;
-    color: #E5FDFF;
-    border-color: #E5FDFF;
 }
 
 #jumbotronText {
@@ -238,58 +299,59 @@ footer {
     margin-top: 10%;
 }
 
+#landing {
+    background-image: url('/Users/lovepark/Desktop/portfolio/assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#landing .row {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: 100%;
+}
+
+#about {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#cvskills .table thead tr td {
+    border: none;
+    color: #628286;
+}
+
+#cvskills .table tbody tr td {
+    vertical-align: middle;
+    border: none;
+    color: #628286;
+}
+
 #textLeft {
     font-size: 2vw;
     padding-left: 3%;
     padding-right: 3%;
+    line-height: 175%;
+}
+
+#emphasize {
+    animation: stagDel 1.5s infinite alternate;
+    color: #628286;
 }
 
 #textRight {
     font-size: 2vw;
     padding-top: 5%;
     padding-right: 3%;
+    line-height: 175%;
 }
 
 #tableImage {
     height: 7vw;
     transition: 3s ease-out;
     animation-name: slide
-}
-
-#emphasize {
-    animation: stagDel 1.5s infinite alternate;
-}
-
-@keyframes smokeOne {
-    0% {
-        bottom: 10%;
-        opacity: 0;
-    } 40% {
-        bottom: 20%;
-        opacity: 0.5;
-    } 80% {
-        bottom: 30%;
-        opacity: 0.3;
-    } 100% {
-        bottom: 40%;
-        opacity: 0;
-    }
-}
-
-@keyframes smokeTwo {
-    0% {
-        bottom: 15%;
-        opacity: 0;
-    } 40% {
-        bottom: 25%;
-        opacity: 0.5;
-    } 80% {
-        bottom: 35%;
-        opacity: 0.3;
-    } 100% {
-        bottom: 35%;
-        opacity: 0;
-    }
 }
 
 @keyframes animDown {
@@ -337,5 +399,37 @@ footer {
         opacity: 0;
     } to {
         opacity: 1;
+    }
+}
+
+@keyframes smokeOne {
+    0% {
+        bottom: 60%;
+        opacity: 0;
+    } 40% {
+        bottom: 70%;
+        opacity: 0.5;
+    } 80% {
+        bottom: 75%;
+        opacity: 0.3;
+    } 100% {
+        bottom: 80%;
+        opacity: 0;
+    }
+}
+
+@keyframes smokeTwo {
+    0% {
+        bottom: 55%;
+        opacity: 0;
+    } 40% {
+        bottom: 60%;
+        opacity: 0.5;
+    } 80% {
+        bottom: 70%;
+        opacity: 0.3;
+    } 100% {
+        bottom: 75%;
+        opacity: 0;
     }
 }
