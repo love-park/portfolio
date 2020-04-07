@@ -37,11 +37,37 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#connect">CONNECT</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/love-park-87ba130/"><img class="d-inline-block align-top" alt="linkedin" height="20px" src="./assets/images/nav_linkedin.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/love-park"><img class="d-inline-block align-top" alt="github" height="20px" src="./assets/images/nav_github.png"></a>
+                    </li>
                 </ul>
             </div>
         </nav>
         <!-- Section: Landing Page -->
         <div class="jumbotron jumbotron-fluid panel" id="landing" data-color="landing">
+            <div class="card-group" id="lander">
+                <div class="card animateLeft" data-delay="0.5s">
+                    <img class="card-img-top" src="./assets/images/landing_atlantaLeft.png" alt="Left Atlanta">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/landing_atlantaLeftFlip.png" alt="Left Atlanta">
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top animateDown" data-delay="0.5s" src="./assets/images/landing_atlantaMid.png" alt="Left Atlanta">
+                    <div class="card">
+                        <img class="card-img-top animateUp" data-delay="0.5s" src="./assets/images/landing_atlantaMidFlip.png" alt="Left Atlanta">
+                    </div>
+                </div>
+                <div class="card animateRight" data-delay="0.5s">
+                    <img class="card-img-top" src="./assets/images/landing_atlantaRight.png" alt="Left Atlanta">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/landing_atlantaRightFlip.png" alt="Left Atlanta">
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
                         <h1 class="display-4 text-right">Hi I'm Love</h1>
@@ -56,9 +82,19 @@
         <div class="container-fluid panel" id="about" data-color="about">
             <h2 class="display-5 animateDown" data-delay="0.5s">ABOUT</h2>
             <br>
-            <div class="row animateLeft" data-delay="1.5s">
-                <p class="card-text text-left" id="textLeft">from <span>Atlanta, GA.</span><br>Recommends exploring our diverse neighborhoods and local finds, such as strolling down the Beltline, eating through Buford Highway, and cheering on Atlanta United</p>
-                <img class="card-img" src="./assets/images/about_personal_atlanta.png" alt="Atlanta">
+            <div class="card-group">
+                <div class="card animateLeft" data-delay="0.5s">
+                    <img class="card-img-top" src="./assets/images/about_personal_atlantaLeft.png" alt="Left Atlanta">
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card stagDelay" data-delay="0.5s">
+                    <img class="card-img-top" src="./assets/images/about_personal_atlantaMiddle.png" alt="Left Atlanta">
+                </div>
+                <div class="card animateRight" data-delay="0.5s">
+                    <img class="card-img-top" src="./assets/images/about_personal_atlantaRight.png" alt="Left Atlanta">
+                </div>
             </div>
             <br>
             <div class="row animateRight" data-delay="2.5s">
@@ -153,103 +189,109 @@
             <br>
             <br>
             <br>
-            <h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
-            <table class="table">
-                <thead>
-                    <tr class="stagDelay" data-delay="0.5s">
-                        <td scope="col"></td>
-                        <td scope="col">Beginner</td>
-                        <td scope="col">Elementary</td>
-                        <td scope="col">Intermediate</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">HTML5</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_html.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_html.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" src="./assets/images/skills_html.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">CSS</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_css.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_css.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" src="./assets/images/skills_css.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">Bootstrap</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_bootstrap.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_bootstrap.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" src="./assets/images/skills_bootstrap.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">Javascript</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_javascriptjquery.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_javascriptjquery.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">jQuery</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_javascriptjquery.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_javascriptjquery.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">Java</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_java.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_java.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" src="./assets/images/skills_java.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">SQL</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_sql.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_sql.png"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <br>
-            <br>
-            <h4 class="animateDown" data-delay="1s">Frameworks, Platforms, Version Control, and other tools</h4>
-            <table class="table">
-                <thead>
-                    <tr class="stagDelay" data-delay="0.5s">
-                        <td scope="col"></td>
-                        <td scope="col">Beginner</td>
-                        <td scope="col">Elementary</td>
-                        <td scope="col">Intermediate</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">RESTful APIs</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_api.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_api.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">SpringBoot</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_springboot.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_springboot.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">Heroku</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s"  src="./assets/images/skills_heroku.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_heroku.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">Git / GitHub</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_gitgithub.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_gitgithub.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="0.5s">R</td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" src="./assets/images/skills_r.png"></td>
-                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" src="./assets/images/skills_r.png"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row">
+            	<div class="col-sm-12 col-md-12 col-lg-6">
+            		<h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
+            		<table class="table">
+		                <thead>
+		                    <tr class="stagDelay" data-delay="0.5s">
+		                        <td scope="col"></td>
+		                        <td scope="col">Beginner</td>
+		                        <td scope="col">Elementary</td>
+		                        <td scope="col">Intermediate</td>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">HTML5</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="html beginner" src="./assets/images/skills_html.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="html elementary" src="./assets/images/skills_html.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="html intermediate" src="./assets/images/skills_html.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">CSS</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="css beginner" src="./assets/images/skills_css.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="css elementary" src="./assets/images/skills_css.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="css intermediate" src="./assets/images/skills_css.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">Bootstrap</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="bootstrap beginner" src="./assets/images/skills_bootstrap.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="bootstrap elementary" src="./assets/images/skills_bootstrap.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="bootstrap intermediate" src="./assets/images/skills_bootstrap.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">Javascript</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="javascript beginner" src="./assets/images/skills_javascriptjquery.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="javascript elementary" src="./assets/images/skills_javascriptjquery.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">jQuery</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="jquery beginner" src="./assets/images/skills_javascriptjquery.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="jquery elementary" src="./assets/images/skills_javascriptjquery.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">Java</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="java beginner" src="./assets/images/skills_java.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="java elementary" src="./assets/images/skills_java.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="java intermediate" src="./assets/images/skills_java.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">SQL</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="sql beginner" src="./assets/images/skills_sql.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="sql elementary" src="./assets/images/skills_sql.png"/></td>
+		                    </tr>
+		                </tbody>
+		            </table>
+		            <br>
+		            <br>
+		            <br>
+            	</div>
+            	<div class="col-sm-12 col-md-12 col-lg-6">
+            		<h4 class="animateDown" data-delay="1s">Frameworks, Version Control, and other tools</h4>
+		            <table class="table">
+		                <thead>
+		                    <tr class="stagDelay" data-delay="0.5s">
+		                        <td scope="col"></td>
+		                        <td scope="col">Beginner</td>
+		                        <td scope="col">Elementary</td>
+		                        <td scope="col">Intermediate</td>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">RESTful APIs</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="api beginner" src="./assets/images/skills_api.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="api elementary" src="./assets/images/skills_api.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">SpringBoot</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="springboot beginner" src="./assets/images/skills_springboot.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="springboot elementary" src="./assets/images/skills_springboot.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">Heroku</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s"  alt="heroku beginner" src="./assets/images/skills_heroku.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="heroku elementary" src="./assets/images/skills_heroku.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">Git / GitHub</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="git beginner" src="./assets/images/skills_gitgithub.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="git elementary" src="./assets/images/skills_gitgithub.png"/></td>
+		                    </tr>
+		                    <tr>
+		                        <td scope="row" class="stagDelay" data-delay="0.5s">R</td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="r beginner" src="./assets/images/skills_r.png"/></td>
+		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="r elementary" src="./assets/images/skills_r.png"/></td>
+		                    </tr>
+		                </tbody>
+		            </table>
+           		</div>
+           	</div>
         </div>
         <!-- Section: Portfolio -->
         <div class="container-fluid panel" id="portfolio" data-color="portfolio">
-            <div class="row">
+            <div class="row stagDelay" data-delay="0.5s">
                 <div class="col-6">
                     <div class="coffee">
                         <div class="coffeeSmoke coffeeSmokeOne"></div>
