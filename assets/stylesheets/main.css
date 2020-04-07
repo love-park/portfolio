@@ -19,12 +19,18 @@ h2 {
     color: #628286;
 }
 
+h3 {
+	font-size: 4vw;
+}
+
 form {
     padding: 5vh;
 }
 
 footer {
     background-color: transparent;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 footer p {
@@ -76,6 +82,11 @@ footer p {
     border-right: 0.2rem solid #628286;
 }
 
+.typewriter > .text:hover {
+	color: #E08474;
+	cursor: pointer;
+}
+
 .bottomBanner {
     position: absolute;
     bottom: 10px;
@@ -90,6 +101,15 @@ footer p {
     padding-top: 10vh;
     padding-bottom: 10vh;
     text-align: center;
+}
+
+.card-group {
+    column-count: 3;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
 }
 
 .imgHov {
@@ -290,7 +310,7 @@ p {
 
 .progress-bar {
     height: 5px;
-    background: #628286;
+    background: #A3BDC4;
     width: 0%;
 }
 
@@ -299,17 +319,22 @@ p {
     margin-top: 10%;
 }
 
-#landing {
+/* #landing {
     background-image: url('/Users/lovepark/Desktop/portfolio/assets/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+} */
+
+#lander {
+    padding-top: 3%;
+    opacity: 0.2;
 }
 
 #landing .row {
     position: absolute;
     right: 5%;
-    bottom: 15%;
+    bottom: 20%;
     width: 100%;
 }
 
