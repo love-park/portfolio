@@ -8,14 +8,14 @@
         <!-- Access to Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
         <!-- Access to Custom CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
     </head>
     <body>
         <!-- Navigation -->
         <nav class="navbar fixed-top navbar-expand-md navbar-light" id="navbar">
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="index.html">
-                <img src="./assets/images/nav_logo.png" class="d-inline-block align-top" alt="logo" height="30px"/>
+                <img class="d-inline-block align-top" alt="logo" height="30px" src="./images/nav_logo.png"/>
                 Love Park
             </a>
             <!-- Toggle / Collapse Button (for Nav Items)-->
@@ -38,33 +38,33 @@
                         <a class="nav-link" href="#connect">CONNECT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/love-park-87ba130/"><img class="d-inline-block align-top" alt="linkedin" height="20px" src="./assets/images/nav_linkedin.png"></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/love-park-87ba130/"><img class="d-inline-block align-top" alt="linkedin" height="20px" src="./images/nav_linkedin.png"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/love-park"><img class="d-inline-block align-top" alt="github" height="20px" src="./assets/images/nav_github.png"></a>
+                        <a class="nav-link" href="https://github.com/love-park"><img class="d-inline-block align-top" alt="github" height="20px" src="./images/nav_github.png"></a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- Section: Landing Page -->
-        <div class="jumbotron jumbotron-fluid panel" id="landing" data-color="landing">
-            <div class="card-group" id="lander">
+        <div class="jumbotron jumbotron-fluid panel" data-color="landing">
+            <div class="card-group landing-image">
                 <div class="card animateLeft" data-delay="0.5s">
-                    <img class="card-img-top" src="./assets/images/landing_atlantaLeft.png" alt="Left Atlanta">
+                    <img class="card-img-top" src="./images/landing_atlantaLeft.png" alt="Left Atlanta">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/landing_atlantaLeftFlip.png" alt="Left Atlanta">
+                        <img class="card-img-top" src="./images/landing_atlantaLeftFlip.png" alt="Left Atlanta Reflection">
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top animateDown" data-delay="0.5s" src="./assets/images/landing_atlantaMid.png" alt="Left Atlanta">
+                    <img class="card-img-top animateDown" data-delay="0.5s" src="./images/landing_atlantaMid.png" alt="Middle Atlanta">
                     <div class="card">
-                        <img class="card-img-top animateUp" data-delay="0.5s" src="./assets/images/landing_atlantaMidFlip.png" alt="Left Atlanta">
+                        <img class="card-img-top animateUp" data-delay="0.5s" src="./images/landing_atlantaMidFlip.png" alt="Middle Atlanta Reflection">
                     </div>
                 </div>
                 <div class="card animateRight" data-delay="0.5s">
-                    <img class="card-img-top" src="./assets/images/landing_atlantaRight.png" alt="Left Atlanta">
+                    <img class="card-img-top" src="./images/landing_atlantaRight.png" alt="Right Atlanta">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/landing_atlantaRightFlip.png" alt="Left Atlanta">
+                        <img class="card-img-top" src="./images/landing_atlantaRightFlip.png" alt="Right Atlanta Reflection">
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                         <p class="lead text-right typewriter" data-wait="3000" data-words='["- full stack developer", "- creative designer", "- effective communicator"]'></p> 
                 </div> 
             </div>
-            <a class="bottomBanner text-center btn-block" href="#about">
+            <a class="landing-banner text-center btn-block" href="#about">
                 <p>Continue to learn more about Love!</p><i class="fas fa-chevron-down" id="emphasize"></i>
             </a>
         </div>
@@ -82,212 +82,303 @@
         <div class="container-fluid panel" id="about" data-color="about">
             <h2 class="display-5 animateDown" data-delay="0.5s">ABOUT</h2>
             <br>
-            <div class="card-group">
-                <div class="card animateLeft" data-delay="0.5s">
-                    <img class="card-img-top" src="./assets/images/about_personal_atlantaLeft.png" alt="Left Atlanta">
-                    <div class="card-body">
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-                <div class="card stagDelay" data-delay="0.5s">
-                    <img class="card-img-top" src="./assets/images/about_personal_atlantaMiddle.png" alt="Left Atlanta">
-                </div>
-                <div class="card animateRight" data-delay="0.5s">
-                    <img class="card-img-top" src="./assets/images/about_personal_atlantaRight.png" alt="Left Atlanta">
-                </div>
-            </div>
-            <br>
-            <div class="row animateRight" data-delay="2.5s">
-                <div class="col-6">
-                    <div class="imgHov">
-                        <div class="imgHovBG"></div>
-                        <img class="card-img imgHovContent" src="./assets/images/about_personal_interests.png" alt="Interests">
-                        <div class="imgHovDetails fadeIn-bottom">
-                            <p>"Bears, Beets, Battlestar Galactica"<br>-Jim Halpert, The Office</p>
+            <!-- About Content: Introduction -->
+            <div class="card-deck">
+                <div class="card">
+                    <div class="imgHover">
+                        <div class="imgHover-BG"></div>
+                        <img class="card-img imgHover-Content" src="./images/about_desc.png" alt="Interests">
+                        <div class="imgHover-Details fadeIn-bottom">
+                            <p>Developing Data-Driven Technological Solutions with SME and Stakeholders</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <p class="card-text text-right" id="textRight"><span>Culinary Enthusiast<br>Rereader</span> of Rothfuss's <span p class="font-italic">The Kingkiller Chronicle</span>, Rowling's <span p class="font-italic">Harry Potter</span> series, and Brown's R. Langdon series<br><span>Current Marathon:</span> NBC's <span p class="font-italic">The Office</span></p>
+                <div class="card">
+                    <div class="card-body text-center about-desc">
+                    	<h5>UX Designer + Developer</h5>
+                    	<br>
+                        <p class="card-text">
+                        	Having a multidisciplinary background, my portfolio integrates research insights with user interface design to improve the user experience.
+                       		<br><br>If you think I would be a good fit for your team, please reach out to chat!
+                       	</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- About Content: Multidisciplinary Developer -->
-        <div class="container-fluid panel" id="cvskills" data-color="cvskills">
-            <h3 class="animateDown fontLabel" data-delay="0.5s">Multidisciplinary Developer</h3>
             <br>
-            <table class="table">
-                <thead>
-                    <tr class="stagDelay" data-delay="1s">
-                        <td scope="col"></td>
-                        <td scope="col">Research</td>
-                        <td scope="col">Code</td>
-                        <td scope="col">Communication</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="1s">Advanced</td>
-                        <td></td>
-                        <td></td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="2s" src="./assets/images/about_multidiscCommunication.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="1s">Intermediate</td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" src="./assets/images/about_multidiscResearch.png"></td>
-                        <td></td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" src="./assets/images/about_multidiscCommunication.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="1s">Elementary</td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" src="./assets/images/about_multidiscResearch.png"></td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" src="./assets/images/about_multidiscCode.png"></td>
-                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" src="./assets/images/about_multidiscCommunication.png"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="stagDelay" data-delay="1s">Beginner</td>
-                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" src="./assets/images/about_multidiscResearch.png"></td>
-                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" src="./assets/images/about_multidiscCode.png"></td>
-                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" src="./assets/images/about_multidiscCommunication.png"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <img class="img-fluid w-100 animateDown" data-delay="0.5s" src="./assets/images/about_cv.png">
-                </div>
+            <!-- About Content: Multidisciplinary Developer -->
+            <div class="card cv-desc">
+            	<h3>Strengths</h3>
+            	<br>
+            	<div class="row">
+	                <div class="col">
+	                    <img class="img-fluid w-100 animateDown" data-delay="0.5s" alt="cv" src="./images/about_cv.png"/>
+	                </div>
+	          	</div>
+	          	<div class="row stagDelay" data-delay="1s">
+	                <div class="col-4">
+	                    <div class="card-body">
+	                        <h6 class="card-title">Analytically Attentive</h6>
+	                        <p class="card-text">Effectively collects, analyzes, and utilizes qualitative and quantitative data to drive decisions.</p>
+	                    </div>
+	                </div>
+	                <div class="col-4">
+	                    <div class="card-body">
+	                        <h6 class="card-title">Consistently Delivers Results</h6>
+	                        <p class="card-text">Creates and pushes products / measureables into the real world.</p>
+	                    </div>
+	                </div>
+	                <div class="col-4">
+	                    <div class="card-body">
+	                        <h6 class="card-title">Relationship-Driven Leadership</h6>
+	                        <p class="card-text">Builds positive relationships, mediates conflict, and motivates others to take action.</p>
+	                    </div>
+	                </div>
+	            </div>
             </div>
-            <div class="row stagDelay" data-delay="1s">
-                <div class="col-4">
-                    <div class="card-body">
-                        <h6 class="card-title fontLabel">Analytically Attentive</h6>
-                        <p class="card-text">Effectively collects, analyzes, and utilizes qualitative and quantitative data to tell any story.</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-body">
-                        <h6 class="card-title fontLabel">Consistently Delivers Results</h6>
-                        <p class="card-text">Creates and pushes products / measureables into the real world.</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-body">
-                        <h6 class="card-title fontLabel">Relationship-Driven Leadership</h6>
-                        <p class="card-text">Builds positive relationships, mediates conflict, and motivates others to take action.</p>
-                    </div>
-                </div>
+            <br>
+            <div class="card cv-table">
+	            <h3 class="animateDown" data-delay="0.5s">Multidisciplinary Developer</h3>
+	            <br>
+            	<table class="table">
+	                <thead>
+	                    <tr class="stagDelay" data-delay="1s">
+	                        <td scope="col"></td>
+	                        <td scope="col">Research</td>
+	                        <td scope="col">Code</td>
+	                        <td scope="col">Communication</td>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                        <td scope="row" class="stagDelay" data-delay="1s">Advanced</td>
+	                        <td></td>
+	                        <td></td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="2s" alt="communication advanced" src="./images/about_multidiscCommunication.png"/></td>
+	                    </tr>
+	                    <tr>
+	                        <td scope="row" class="stagDelay" data-delay="1s">Intermediate</td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" alt="research intermediate" src="./images/about_multidiscResearch.png"/></td>
+	                        <td></td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" alt="communication intermediate" src="./images/about_multidiscCommunication.png"/></td>
+	                    </tr>
+	                    <tr>
+	                        <td scope="row" class="stagDelay" data-delay="1s">Elementary</td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="research elementary" src="./images/about_multidiscResearch.png"/></td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="code elementary" src="./images/about_multidiscCode.png"/></td>
+	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="communication elementary" src="./images/about_multidiscCommunication.png"/></td>
+	                    </tr>
+	                    <tr>
+	                        <td scope="row" class="stagDelay" data-delay="1s">Beginner</td>
+	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="research beginner" src="./images/about_multidiscResearch.png"/></td>
+	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="code beginner" src="./images/about_multidiscCode.png"/></td>
+	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="communication beginner" src="./images/about_multidiscCommunication.png"/></td>
+	                    </tr>
+	                </tbody>
+	            </table>
             </div>
         </div>
         <!-- Section: Skills -->  
         <div class="container-fluid panel" id="skills" data-color="skills">
             <div class="animateDown" data-delay="0.5s">
                 <h2>SKILLS</h2>
-                <h3>Full Stack Development</h3>
+                <h3>UX Designer + Developer</h3>
             </div>
             <br>
-            <br>
-            <br>
-            <div class="row">
-            	<div class="col-sm-12 col-md-12 col-lg-6">
-            		<h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
-            		<table class="table">
-		                <thead>
-		                    <tr class="stagDelay" data-delay="0.5s">
-		                        <td scope="col"></td>
-		                        <td scope="col">Beginner</td>
-		                        <td scope="col">Elementary</td>
-		                        <td scope="col">Intermediate</td>
-		                    </tr>
-		                </thead>
-		                <tbody>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">HTML5</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="html beginner" src="./assets/images/skills_html.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="html elementary" src="./assets/images/skills_html.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="html intermediate" src="./assets/images/skills_html.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">CSS</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="css beginner" src="./assets/images/skills_css.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="css elementary" src="./assets/images/skills_css.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="css intermediate" src="./assets/images/skills_css.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">Bootstrap</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="bootstrap beginner" src="./assets/images/skills_bootstrap.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="bootstrap elementary" src="./assets/images/skills_bootstrap.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="bootstrap intermediate" src="./assets/images/skills_bootstrap.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">Javascript</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="javascript beginner" src="./assets/images/skills_javascriptjquery.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="javascript elementary" src="./assets/images/skills_javascriptjquery.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">jQuery</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="jquery beginner" src="./assets/images/skills_javascriptjquery.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="jquery elementary" src="./assets/images/skills_javascriptjquery.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">Java</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="java beginner" src="./assets/images/skills_java.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="java elementary" src="./assets/images/skills_java.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="java intermediate" src="./assets/images/skills_java.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">SQL</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="sql beginner" src="./assets/images/skills_sql.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="sql elementary" src="./assets/images/skills_sql.png"/></td>
-		                    </tr>
-		                </tbody>
-		            </table>
-		            <br>
-		            <br>
-		            <br>
+            <div class="card skills-ux">
+            	<div class="row">
+            		<div class="col-sm-12 col-md-12 col-lg-6">
+            			<h4 class="animateDown" data-delay="1s">User Centered Research</h4>
+            			<br>
+            			<div class="row">
+            				<div class="col-4 my-auto">Research Design</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-research">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Interviewing</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-interview">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Creating and Administering Tests</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-testing">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Collecting and Organizing Data</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-gatherData">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Data Analysis</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-dataAnalysis">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Presenting Findings</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
+            					<div class="bar-skill-findings">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<br>
+            		</div>
+            		<div class="col-sm-12 col-md-12 col-lg-6">
+            			<h4 class="animateDown" data-delay="1s">User Centered Design</h4>
+            			<br>
+            			<div class="row">
+            				<div class="col-4 my-auto">UX Sketching</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
+            					<div class="bar-skill-sketch">
+            						<div class="bar" data-value="Beginner"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Prototyping</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
+            					<div class="bar-skill-prototyping">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Interface Layout and Design</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
+            					<div class="bar-skill-interface">
+            						<div class="bar" data-value="Intermediate"></div>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="row">
+            				<div class="col-4 my-auto">Adobe XD</div>
+            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
+            					<div class="bar-skill-adobexd">
+            						<div class="bar" data-value="Beginner"></div>
+            					</div>
+            				</div>
+            			</div>
+            		</div>
             	</div>
-            	<div class="col-sm-12 col-md-12 col-lg-6">
-            		<h4 class="animateDown" data-delay="1s">Frameworks, Version Control, and other tools</h4>
-		            <table class="table">
-		                <thead>
-		                    <tr class="stagDelay" data-delay="0.5s">
-		                        <td scope="col"></td>
-		                        <td scope="col">Beginner</td>
-		                        <td scope="col">Elementary</td>
-		                        <td scope="col">Intermediate</td>
-		                    </tr>
-		                </thead>
-		                <tbody>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">RESTful APIs</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="api beginner" src="./assets/images/skills_api.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="api elementary" src="./assets/images/skills_api.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">SpringBoot</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="springboot beginner" src="./assets/images/skills_springboot.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="springboot elementary" src="./assets/images/skills_springboot.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">Heroku</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s"  alt="heroku beginner" src="./assets/images/skills_heroku.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="heroku elementary" src="./assets/images/skills_heroku.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">Git / GitHub</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="git beginner" src="./assets/images/skills_gitgithub.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="git elementary" src="./assets/images/skills_gitgithub.png"/></td>
-		                    </tr>
-		                    <tr>
-		                        <td scope="row" class="stagDelay" data-delay="0.5s">R</td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="r beginner" src="./assets/images/skills_r.png"/></td>
-		                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="r elementary" src="./assets/images/skills_r.png"/></td>
-		                    </tr>
-		                </tbody>
-		            </table>
-           		</div>
-           	</div>
+            </div>
+			<br>
+            <div class="card skills-dev">
+            	<div class="row">
+	            	<div class="col-sm-12 col-md-12 col-lg-6">
+	            		<h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
+	            		<table class="table">
+			                <thead>
+			                    <tr class="stagDelay" data-delay="0.5s">
+			                        <td scope="col"></td>
+			                        <td scope="col">Beginner</td>
+			                        <td scope="col">Elementary</td>
+			                        <td scope="col">Intermediate</td>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">HTML5</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="html beginner" src="./images/skills_html.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="html elementary" src="./images/skills_html.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="html intermediate" src="./images/skills_html.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">CSS</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="css beginner" src="./images/skills_css.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="css elementary" src="./images/skills_css.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="css intermediate" src="./images/skills_css.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">Bootstrap</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="bootstrap beginner" src="./images/skills_bootstrap.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="bootstrap elementary" src="./images/skills_bootstrap.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="bootstrap intermediate" src="./images/skills_bootstrap.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">Javascript</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="javascript beginner" src="./images/skills_javascriptjquery.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="javascript elementary" src="./images/skills_javascriptjquery.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">jQuery</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="jquery beginner" src="./images/skills_javascriptjquery.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="jquery elementary" src="./images/skills_javascriptjquery.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">Java</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="java beginner" src="./images/skills_java.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="java elementary" src="./images/skills_java.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="java intermediate" src="./images/skills_java.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">SQL</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="sql beginner" src="./images/skills_sql.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="sql elementary" src="./images/skills_sql.png"/></td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <br>
+			            <br>
+			            <br>
+	            	</div>
+	            	<div class="col-sm-12 col-md-12 col-lg-6">
+	            		<h4 class="animateDown" data-delay="1s">Frameworks, Version Control, and other tools</h4>
+			            <table class="table">
+			                <thead>
+			                    <tr class="stagDelay" data-delay="0.5s">
+			                        <td scope="col"></td>
+			                        <td scope="col">Beginner</td>
+			                        <td scope="col">Elementary</td>
+			                        <td scope="col">Intermediate</td>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">RESTful APIs</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="api beginner" src="./images/skills_api.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="api elementary" src="./images/skills_api.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">SpringBoot</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="springboot beginner" src="./images/skills_springboot.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="springboot elementary" src="./images/skills_springboot.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">Heroku</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s"  alt="heroku beginner" src="./images/skills_heroku.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="heroku elementary" src="./images/skills_heroku.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">Git / GitHub</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="git beginner" src="./images/skills_gitgithub.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="git elementary" src="./images/skills_gitgithub.png"/></td>
+			                    </tr>
+			                    <tr>
+			                        <td scope="row" class="stagDelay" data-delay="0.5s">R</td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="r beginner" src="./images/skills_r.png"/></td>
+			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="r elementary" src="./images/skills_r.png"/></td>
+			                    </tr>
+			                </tbody>
+			            </table>
+	           		</div>
+	           	</div>
+	        </div>
         </div>
         <!-- Section: Portfolio -->
         <div class="container-fluid panel" id="portfolio" data-color="portfolio">
@@ -306,6 +397,9 @@
                     <h4 id="emphasize">Coming Soon</h4>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
         </div>
         <!-- Section: Connect -->
         <div class="container-fluid panel" id="connect" data-color="contact">
@@ -359,6 +453,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./assets/javascript/main.js"></script>
+        <script type="text/javascript" src="./javascript/main.js"></script>
     </body>
 </html>

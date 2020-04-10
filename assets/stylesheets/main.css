@@ -23,6 +23,18 @@ h3 {
 	font-size: 4vw;
 }
 
+h3 .font-black, h6 .font-black {
+    color: black;
+}
+
+h4 {
+    color: #C2D3D2;;
+}
+
+p {
+    color: black;
+}
+
 form {
     padding: 5vh;
 }
@@ -50,7 +62,7 @@ footer p {
 }
 
 .color-about {
-    background-color: #DEF2F1;
+    background-color: #E3F2F1;
 }
 
 .color-cvskills {
@@ -58,7 +70,7 @@ footer p {
 }
 
 .color-skills {
-    background-color: #1F2833;
+    background-color: #9FC2CC;
 }
 
 .color-portfolio {
@@ -69,9 +81,31 @@ footer p {
     background-color: #1F2833;
 }
 
+.font-white {
+	color: white;
+}
+
 .jumbotron-fluid {
     background-color: transparent;
     height: 100vh;
+}
+
+.jumbotron .row {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: 100%;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+.landing-image {
+	column-count: 3;
+	padding-top: 3%;
+    opacity: 0.2;
 }
 
 .text {
@@ -87,14 +121,24 @@ footer p {
 	cursor: pointer;
 }
 
-.bottomBanner {
+.landing-banner {
     position: absolute;
     bottom: 10px;
     line-height: 3%;
 }
 
-.bottomBanner:hover {
+.landing-banner:hover {
     text-decoration: none;
+}
+
+.fas {
+    font-size: 3vw;
+    transition: 3s ease-out;
+    animation-name: slide
+}
+
+.animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay {
+    opacity: 0;
 }
 
 .container-fluid {
@@ -103,22 +147,21 @@ footer p {
     text-align: center;
 }
 
-.card-group {
-    column-count: 3;
+.about-desc {
+	background-color: #0E2D3E;
 }
 
-.card {
-    background-color: transparent;
-    border: none;
+.about-desc p {
+	color: white;
 }
 
-.imgHov {
+.imgHover {
     position: relative;
     margin: auto;
     overflow: hidden;
 }
 
-.imgHov .imgHovBG {
+.imgHover .imgHover-BG {
     background: #D7EAE9;
     position: absolute;
     width: 100%;
@@ -132,11 +175,11 @@ footer p {
     transition: all 0.4s ease-in-out 0s;
 }
 
-.imgHovcontent {
+.imgHover-Content {
     width: 100%;
 }
 
-.imgHovDetails {
+.imgHover-Details {
     position: absolute;
     text-align: center;
     padding-left: 1em;
@@ -153,39 +196,147 @@ footer p {
     transition: all 0.5s ease-in-out 0s;
 }
 
-.imgHov:hover .imgHovBG {
+.imgHover:hover .imgHover-BG {
     opacity: 0.7;
 }
 
-.imgHov:hover .imgHovDetails {
+.imgHover:hover .imgHover-Details {
     top: 60%;
     left: 50%;
     opacity: 1;
 }
 
-.imgHovDetails p {
+.imgHover-Details p {
     color: black;
-    font-size: 2vh;
+    font-size: 2vw;
 }
 
 .fadeIn-bottom {
     top: 80%;
 }
 
-h3 .fontLabel, h6 .fontLabel {
-    color: black;
+.cv-table {
+	background-color: #3C5568;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-h4 {
-    color: #C2D3D2;;
+.cv-desc {
+	background-color: transparent;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-p {
-    color: black;
+.cv-desc .card-text {
+	color: #123B51;
 }
 
-.font-italic {
-    color: black;
+.bar-graph {
+	-webkit-animation: fade-in-text 3s 0.5s forwards;
+	-moz-animation: fade-in-text 3s 0.5s forwards;
+	animation: fade-in-text 3s 0.5s forwards;
+	opacity: 0;
+}
+
+.bar-graph-horizontal .bar {
+	border-radius: 3px;
+	height: 55px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.bar-graph-research .bar::after {
+	-webkit-animation: fade-in-text 3s 0.5s forwards;
+	-moz-animation: fade-in-text 3s 0.5s forwards;
+	animation: fade-in-text 3s 0.5s forwards;
+	color: white;
+	content: attr(data-value);
+	font-weight: 500;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+.bar-graph-design .bar::after {
+	-webkit-animation: fade-in-text 3s 0.5s forwards;
+	-moz-animation: fade-in-text 3s 0.5s forwards;
+	animation: fade-in-text 3s 0.5s forwards;
+	color: white;
+	content: attr(data-value);
+	font-weight: 500;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+
+.bar-graph-research .bar-skill-research .bar {
+	background-color: #8FC1E3;
+	-webkit-animation: ux-skill-research 3s 0.5s forwards;
+	-moz-animation: ux-skill-research 3s 0.5s forwards;
+	animation: ux-skill-research 3s 0.5s forwards;
+}
+
+.bar-graph-research .bar-skill-interview .bar {
+	background-color: #8FC1E3;
+	-webkit-animation: ux-skill-interview 3s 0.5s forwards;
+	-moz-animation: ux-skill-interview 3s 0.5s forwards;
+	animation: ux-skill-interview 3s 0.5s forwards;
+}
+
+.bar-graph-research .bar-skill-testing .bar {
+	background-color: #5085A5;
+	-webkit-animation: ux-skill-testing 3s 0.5s forwards;
+	-moz-animation: ux-skill-testing 3s 0.5s forwards;
+	animation: ux-skill-testing 3s 0.5s forwards;
+}
+
+.bar-graph-research .bar-skill-gatherData .bar {
+	background-color: #5085A5;
+	-webkit-animation: ux-skill-gatherData 3s 0.5s forwards;
+	-moz-animation: ux-skill-gatherData 3s 0.5s forwards;
+	animation: ux-skill-gatherData 3s 0.5s forwards;
+}
+
+.bar-graph-research .bar-skill-dataAnalysis .bar {
+	background-color: #5085A5;
+	-webkit-animation: ux-skill-dataAnalysis 3s 0.5s forwards;
+	-moz-animation: ux-skill-dataAnalysis 3s 0.5s forwards;
+	animation: ux-skill-dataAnalysis 3s 0.5s forwards;
+}
+
+.bar-graph-research .bar-skill-findings .bar {
+	background-color: #31708E;
+	-webkit-animation: ux-skill-findings 3s 0.5s forwards;
+	-moz-animation: ux-skill-findings 3s 0.5s forwards;
+	animation: ux-skill-findings 3s 0.5s forwards;
+}
+
+.bar-graph-design .bar-skill-sketch .bar {
+	background-color: #A4B3B6;
+	-webkit-animation: ux-skill-sketch 3s 0.5s forwards;
+	-moz-animation: ux-skill-sketch 3s 0.5s forwards;
+	animation: ux-skill-sketch 3s 0.5s forwards;
+}
+
+.bar-graph-design .bar-skill-prototyping .bar {
+	background-color: #A4B3B6;
+	-webkit-animation: ux-skill-prototype 3s 0.5s forwards;
+	-moz-animation: ux-skill-prototype 3s 0.5s forwards;
+	animation: ux-skill-prototype 3s 0.5s forwards;
+}
+
+.bar-graph-design .bar-skill-interface .bar {
+	background-color: #88BDBC;
+	-webkit-animation: ux-skill-interface 3s 0.5s forwards;
+	-moz-animation: ux-skill-interface 3s 0.5s forwards;
+	animation: ux-skill-interface 3s 0.5s forwards;
+}
+
+.bar-graph-design .bar-skill-adobexd .bar {
+	background-color: #557A95;
+	-webkit-animation: ux-skill-adobexd 3s 0.5s forwards;
+	-moz-animation: ux-skill-adobexd 3s 0.5s forwards;
+	animation: ux-skill-adobexd 3s 0.5s forwards;
 }
 
 .table tbody {
@@ -208,14 +359,22 @@ p {
     animation-duration: 4s;
 }
 
-.fas {
-    font-size: 3vw;
-    transition: 3s ease-out;
-    animation-name: slide
+.skills-ux {
+	background-color: #2D4159;
+	padding: 5%;
 }
 
-.animateDown, .animateUp, .animateLeft, .animateRight, .stagDelay {
-    opacity: 0;
+/* .skills-ux .col-3 {
+	color: red;
+} */
+
+.skills-ux .row {
+	padding-bottom: 3%;
+}
+
+.skills-dev {
+	background-color: #1F2833;
+	padding: 5%;
 }
 
 .coffee {
@@ -319,25 +478,6 @@ p {
     margin-top: 10%;
 }
 
-/* #landing {
-    background-image: url('/Users/lovepark/Desktop/portfolio/assets/images/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-#lander {
-    padding-top: 3%;
-    opacity: 0.2;
-}
-
-#landing .row {
-    position: absolute;
-    right: 5%;
-    bottom: 20%;
-    width: 100%;
-}
-
 #about {
     padding-left: 5%;
     padding-right: 5%;
@@ -374,7 +514,7 @@ p {
 }
 
 #tableImage {
-    height: 7vw;
+    width: 7vw;
     transition: 3s ease-out;
     animation-name: slide
 }
@@ -425,6 +565,94 @@ p {
     } to {
         opacity: 1;
     }
+}
+
+@keyframes ux-skill-research {
+	0% {
+		width: 0;
+	} 100% {
+		width: 60%;
+	}
+}
+
+@keyframes ux-skill-interview {
+	0% {
+		width: 0;
+	} 100% {
+		width: 60%;
+	}
+}
+
+@keyframes ux-skill-testing {
+	0% {
+		width: 0;
+	} 100% {
+		width: 70%;
+	}
+}
+
+@keyframes ux-skill-gatherData {
+	0% {
+		width: 0;
+	} 100% {
+		width: 80%;
+	}
+}
+
+@keyframes ux-skill-dataAnalysis {
+	0% {
+		width: 0;
+	} 100% {
+		width: 60%;
+	}
+}
+
+@keyframes ux-skill-findings {
+	0% {
+		width: 0;
+	} 100% {
+		width: 70%;
+	}
+}
+
+@keyframes ux-skill-sketch {
+	0% {
+		width: 0;
+	} 100% {
+		width: 40%;
+	}
+}
+
+@keyframes ux-skill-prototype {
+	0% {
+		width: 0;
+	} 100% {
+		width: 60%;
+	}
+}
+
+@keyframes ux-skill-interface {
+	0% {
+		width: 0;
+	} 100% {
+		width: 60%;
+	}
+}
+
+@keyframes ux-skill-adobexd {
+	0% {
+		width: 0;
+	} 100% {
+		width: 40%;
+	}
+}
+
+@keyframes fade-in-text {
+	0% {
+		opacity: 0;
+	} 100% {
+		opacity: 1;
+	}
 }
 
 @keyframes smokeOne {
