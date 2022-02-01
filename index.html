@@ -1,458 +1,669 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Love's Portfolio</title>
-        <!-- Access to Bootstrap Library -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- Access to Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-        <!-- Access to Custom CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar fixed-top navbar-expand-md navbar-light" id="navbar">
-            <!-- Navbar Brand -->
-            <a class="navbar-brand" href="index.html">
-                <img class="d-inline-block align-top" alt="logo" height="30px" src="./images/nav_logo.png"/>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="./assets/stylesheets/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Scripts -->
+    <script type="text/javascript" src="./assets/scripts/myScript.js"></script>
+    <title>Love's Portfolio</title>
+</head>
+<body>
+    <!-- Navbar / Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <!-- Nav/Menu Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/navbar-graphic.png" alt="self image" width="24" height="24" class="d-inline-block align-text-top">
                 Love Park
             </a>
-            <!-- Toggle / Collapse Button (for Nav Items)-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Nav Items: Linked, Aligned Right -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
+            <!-- Nav/Menu Left Justified -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">SKILLS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#connect">CONNECT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/love-park-87ba130/"><img class="d-inline-block align-top" alt="linkedin" height="20px" src="./images/nav_linkedin.png"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/love-park"><img class="d-inline-block align-top" alt="github" height="20px" src="./images/nav_github.png"></a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                 </ul>
-            </div>
-        </nav>
-        <!-- Section: Landing Page -->
-        <div class="jumbotron jumbotron-fluid panel" data-color="landing">
-            <div class="card-group landing-image">
-                <div class="card animateLeft" data-delay="0.5s">
-                    <img class="card-img-top" src="./images/landing_atlantaLeft.png" alt="Left Atlanta">
-                    <div class="card">
-                        <img class="card-img-top" src="./images/landing_atlantaLeftFlip.png" alt="Left Atlanta Reflection">
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top animateDown" data-delay="0.5s" src="./images/landing_atlantaMid.png" alt="Middle Atlanta">
-                    <div class="card">
-                        <img class="card-img-top animateUp" data-delay="0.5s" src="./images/landing_atlantaMidFlip.png" alt="Middle Atlanta Reflection">
-                    </div>
-                </div>
-                <div class="card animateRight" data-delay="0.5s">
-                    <img class="card-img-top" src="./images/landing_atlantaRight.png" alt="Right Atlanta">
-                    <div class="card">
-                        <img class="card-img-top" src="./images/landing_atlantaRightFlip.png" alt="Right Atlanta Reflection">
-                    </div>
+                <!-- Nav/Menu Right Justified -->
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/love-park/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/documents/resume.pdf" target="_blank">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:love.park@ceismc.gatech.edu">Email</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                        <h1 class="display-4 text-right">Hi I'm Love</h1>
-                        <p class="lead text-right typewriter" data-wait="3000" data-words='["- full stack developer", "- creative designer", "- effective communicator"]'></p> 
-                </div> 
-            </div>
-            <a class="landing-banner text-center btn-block" href="#about">
-                <p>Continue to learn more about Love!</p><i class="fas fa-chevron-down" id="emphasize"></i>
-            </a>
         </div>
-        <!-- Section: About -->
-        <div class="container-fluid panel" id="about" data-color="about">
-            <h2 class="display-5 animateDown" data-delay="0.5s">ABOUT</h2>
-            <br>
-            <!-- About Content: Introduction -->
-            <div class="card-deck">
-                <div class="card">
-                    <div class="imgHover">
-                        <div class="imgHover-BG"></div>
-                        <img class="card-img imgHover-Content" src="./images/about_desc.png" alt="Interests">
-                        <div class="imgHover-Details fadeIn-bottom">
-                            <p>Developing Data-Driven Technological Solutions with SME and Stakeholders</p>
+    </nav>
+    <!-- Landing / Introduction -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h3 id="timeMessenger"></h3>
+                <br>
+                <h1 class="padTopLeft8">Hi, I'm Love.</h1>
+                <p class="padLeft8">I am a digital designer for educational outreach to advance STEAM learning with K-12 audiences. I am applying to Georgia Tech's MS-HCI program to expand my knowledge and skills in human-computer interaction and enhance curriculum web experiences for K-12 audiences.</p>
+            </div>
+            <div class="col-6">
+                <img src="./assets/images/navbar-graphic.png" alt="self image" width="80%" class="d-inline-block marTop">
+            </div>
+        </div>
+    </div> 
+    <!-- Projects -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3 class="padLeft12" id="projects">Projects</h3>
+                <p class="padLeft12">My current work at Georgia Tech's Center for Education Integrating Science, Mathematics, and Computing with the EarSketch | Your Voice is Power, K-12 InVenture Prize, BIRDEE, and STEM-ID projects. Within the purviews of my responsibilities, I lead our digital infrastructure improvements including web design/development, marketing, and social media.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Content: EarSketch Teachers -->
+    <div class="container-fluid shadow">
+        <div class="d-grid gap-3">
+            <div class="card cardmx border-light marTopper">
+                <div class="row">
+                    <h4 class="card-title text-end">EarSketch Teachers<br></h4>
+                </div>
+                <div class="row g-0">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-intro" type="button" role="tab" aria-controls="v-pills-intro" aria-selected="true">Introduction</button>
+                            <button class="nav-link" id="v-pills-goal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-goal" type="button" role="tab" aria-controls="v-pills-goal" aria-selected="true">Goal</button>
+                            <button class="nav-link" id="v-pills-team-tab" data-bs-toggle="pill" data-bs-target="#v-pills-team" type="button" role="tab" aria-controls="v-pills-team" aria-selected="false">Team</button>
+                            <button class="nav-link" id="v-pills-research-tab" data-bs-toggle="pill" data-bs-target="#v-pills-research" type="button" role="tab" aria-controls="v-pills-research" aria-selected="false">Research</button>
+                            <button class="nav-link" id="v-pills-analysis-tab" data-bs-toggle="pill" data-bs-target="#v-pills-analysis" type="button" role="tab" aria-controls="v-pills-analysis" aria-selected="false">Analysis</button>
+                            <button class="nav-link" id="v-pills-ideation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ideation" type="button" role="tab" aria-controls="v-pills-ideation" aria-selected="false">Ideation</button>
+                            <button class="nav-link" id="v-pills-prototype-tab" data-bs-toggle="pill" data-bs-target="#v-pills-prototype" type="button" role="tab" aria-controls="v-pills-prototype" aria-selected="false">Prototyping</button>
+                            <button class="nav-link" id="v-pills-delivereables-tab" data-bs-toggle="pill" data-bs-target="#v-pills-deliverables" type="button" role="tab" aria-controls="v-pills-deliverables" aria-selected="false">Deliverables</button>
+                            <button class="nav-link" id="v-pills-evaluation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-evaluation" type="button" role="tab" aria-controls="v-pills-evaluation" aria-selected="false">Evaluation</button>
+                            <button class="nav-link" id="v-pills-upnext-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upnext" type="button" role="tab" aria-controls="v-pills-upnext" aria-selected="false">Up Next</button>
+                        </div>
+                        <!-- Navigation Content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <img src="./assets/images/earSketchTeachersGraphic.png" class="img-fluid rounded-start" alt="EarSketch Teachers logo">
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction</h5>
+                                            <p class="card-text">EarSketch is a platform where students can learn computer science by remixing sound stems using code. Working alongside Georgia Tech's Music Technology, CEISMC supports EarSketch's K-12 curriculum and competition by developing teacher-facing curriculum resources, providing administrative support for its competition, and conducting research to determine EarSketch's efficacy in bolstering diversity and participation of K-12 students.</p>
+                                            <p class="card-text">In the past, curriculum materials were delivered and distributed through the platform or via email; however, one of the initiatives for the website was to deliver the curriculum more easily for teachers.</p>
+                                            <p class="card-text">In partnership with Amazon Future Engineer and YELLOW foundation, the Your Voice is Power competition features a learning experience, integrating themes of music, computer science, entrepreneurship, and social justice.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/images/preDesignSite.png" class="img-fluid rounded-start" alt="original landing page">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Rationale</h5>
+                                                <p class="card-text">With growing visibility and reach through the partnership with Amazon Future Engineer, the EarSketch Teachers website felt outdated to stakeholders.</p>
+                                                <h5 class="card-title">Goal</h5>
+                                                <p class="card-text">To redesign the site for teachers to explore and adopt our curriculum and competition resources.</p>
+                                                <h5 class="card-title">Target Audience</h5>
+                                                <p class="card-text">Primary Audience: K-12 Teachers and Students<br>Secondary Audience: School Administration, School Boards, Parents</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <iframe src="https://giphy.com/embed/65HR2UL6nn6XMSUoRA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/boomerangtoons-scooby-doo-boomerang-65HR2UL6nn6XMSUoRA"></a></p>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold">Roxanne Moore<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder</span></p>
+                                                <p class="card-text fw-bold">Sabrina Grossman<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder, Project Manager, Content, Testing</span></p>
+                                                <p class="card-text fw-bold">Danyelle Larkin<br><span class="card-text fw-normal fst-italic">Stakeholder</span></p>
+                                                <p class="card-text fw-bold">Love Park (Me!)<br><span class="card-text fw-normal fst-italic">Development, Content, Design, Testing, Maintenance, Management</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-research" role="tabpanel" aria-labelledby="v-pills-research-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/images/stakeholders.png" class="img-fluid rounded-start" alt="calendar invite">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Stakeholder Interview / Feedback</h5>
+                                                <p class="card-text">While given broad parameters and creative freedom, I sought more information being new to the project and team. My team and stakeholders provided the following parameters:
+                                                    <ul>
+                                                        <p><span class="fw-bold">Must Haves: </span>Open access CSP and Your Voice is Power competition curriculum, teacher registration, learning resources (videos and events), competition information, created via a website builder or content management system<br><span class="fw-bold">Nice to Haves: </span>Contact form, FAQ section</p>
+                                                    </ul>
+                                                </p>
+                                                <br>
+                                                <h5 class="card-title">Opportunities to Explore</h5>
+                                                <p class="card-text">How might we drive teachers to explore our curriculum with their limited bandwidth?<br>How might we integrate teacher materials into our website to create a seamless learning experience?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="v-pills-analysis" role="tabpanel" aria-labelledby="v-pills-analysis-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/images/audit.png" class="img-fluid rounded-start" alt="auditing previous site">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Website Content Audit</h5>
+                                                <p class="card-text">Conducting a content audit of our existing 40 pages, I found opportunities to update, archive, and add content and functionality.</p>
+                                                <h5 class="card-title">Competitive Analysis</h5>
+                                                <p class="card-text">Exploring well-established, peer/competitive instructional websites, I found the following best practices and good ideas from code.org to emulate:
+                                                    <ul>
+                                                        <li>Informative Home Page with statistics and quick information for new visitors.</li>
+                                                        <li>Excellent navigation system for its curriculum offerings, displaying intended grade levels and a curriculum overview.</li>
+                                                        <li>Interactive learning experiences for teachers to teach using the site and students for self-guided learning</li>
+                                                    </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-ideation" role="tabpanel" aria-labelledby="v-pills-ideation-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/images/userflow.png" class="img-fluid rounded-start" alt="notes on prospective teachers">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">User Flow</h5>
+                                                <p class="card-text">Using audience journeys and content maps, I outlined the steps that users might take to accomplish tasks to build content outlines.</p>
+                                                <br>
+                                                <h5 class="card-title">Opportunity for Growth / Learning</h5>
+                                                <p class="card-text"><span class="fw-bold">Wireframing: </span>Having gone straight to prototyping with this project, I recognize the benefits of wireframing. I hope to learn and implement this into my design process for the next phase of the website and future web projects.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-prototype" role="tabpanel" aria-labelledby="v-pills-prototype-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <img src="./assets/images/reDesignSite.png" class="img-fluid rounded-start" width="90%" alt="redesigned site">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h5 class="card-title">Prototyping</h5>
+                                            <p class="card-text">Using audience journeys and content maps, I outlined the steps that users might take to accomplish tasks to build content outlines.</p>
+                                            <br>
+                                            <h5 class="card-title">Opportunity for Growth / Learning</h5>
+                                            <p class="card-text"><span class="fw-bold">Wireframing: </span>Reflecting on my first-time and first-hand experience with web design, I would have greatly benefitted from wireframing. I hope to learn and implement this into my design process for the next phase of the website.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-deliverables" role="tabpanel" aria-labelledby="v-pills-deliverables-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <img src="./assets/images/deliverables.png" class="img-fluid rounded-start" width="90%" alt="redesigned site">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h5 class="card-title">Deliverables</h5>
+                                            <p class="card-text"><span class="fw-bold">Redesign of EarSketch Teachers Site</span><br>Launched October 2020<br>Redesign, addition of learning resources, addition of curriculum offerings</p>
+                                            <p class="card-text"><span class="fw-bold">Addition of 2021 Your Voice is Power Competition</span><br>Launched December 2020<br>Addition of competition information pages</p>
+                                            <p class="card-text"><span class="fw-bold">Addition of 2021 Your Voice is Power Curriculum</span><br>Launched January 2021<br>Integration of Your Voice is Power learning experience / curriculum, addition of language toggle translated curriculum in French Canadian</p>
+                                            <p class="card-text"><span class="fw-bold">Updates for 2022 Your Voice is Power Competition and Curriculum</span><br>Launched December 2021<br>Updated competition information and addition of 2022 YVIP curriculum</p>
+                                            <a href="https://www.teachers.earsketch.org/" type="button" class="btn btn-outline-secondary btn-lg btn-block" target="_blank">Go to earsketch.teachers.org</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-evaluation" role="tabpanel" aria-labelledby="v-pills-evaluation-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <div class="tenor-gif-embed" data-postid="12408410" data-share-method="host" data-aspect-ratio="1.77778" data-width="90%"><a href="https://tenor.com/view/i-love-surveys-excited-eager-attracted-college-humors-gif-12408410">I Love Surveys Excited GIF</a>from <a href="https://tenor.com/search/i+love+surveys-gifs">I Love Surveys GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h5 class="card-title">Evaluation</h5>
+                                            <p class="card-text">Aimed to amplify long-term diversity and participation in CS and STEM, we regularly collected data to evaluate our project's efficacy. Our research investigated middle and high school students' interest in STEM careers after participating in the curriculum and competition. We also captured reach and engagement data to evaluate our partnership with Amazon Future Engineer.<br><br>In addition to our survey and tracking data, we conducted teacher interviews for feedback on our curriculum and competition. Participating in these interviews, I was interested in how teachers interacted and engaged with the website.</p>
+                                            <h5 class="card-title">Takeaways from Teachers:</h5>
+                                            <p class="card-text">
+                                                <ul>The website layout was helpful and better compared to the text-only curriculum.</ul>
+                                                <ul>Teachers want more resources on the website. </ul>
+                                                <ul>Some teachers did not know the website existed and would find more communication about the teacher website useful.</ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-upnext" role="tabpanel" aria-labelledby="v-pills-upnext-tab">
+                                <div class="card mb-3 border-0 marTop">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="14550906" data-share-method="host" data-aspect-ratio="1" data-width="90%"><a href="https://tenor.com/view/kstr-kochstrasse-to-do-to-do-gif-14550906">Kstr Kochstrasse Sticker</a>from <a href="https://tenor.com/search/kstr-stickers">Kstr Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="card-title">Up Next</h5>
+                                            <p class="card-text fw-bold">Website Evaluation<br><span class="fw-normal fst-italic">Observe focus group to evaluate teachers' web experience and receive direct feedback -- I will be leading a Teacher Focus Group for February 16, 2022 with Amazon Future Engineer Teachers</span>
+                                            <p class="card-text fw-bold">Website Migration<br><span class="fw-normal fst-italic">Migrate to a more sustainable web hosting platform</span></p>
+                                            <p class="card-text fw-bold">Computer Science Principles Curriculum Update<br><span class="fw-normal fst-italic">Replace CSP curriculum</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content: BIRDEE -->
+    <div class="container-fluid marTopper shadow">
+        <div class="d-grid gap-3">
+            <div class="card cardmx border-light">
+                <div class="row">
+                    <h4 class="card-title text-end">BIRDEE: Biologically-Inspired Design in High School Engineering Education<br></h4>
+                </div>
+                <div class="row g-0">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-intro1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-intro1" type="button" role="tab" aria-controls="v-pills-intro1" aria-selected="true">Introduction</button>
+                            <button class="nav-link" id="v-pills-goal1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-goal1" type="button" role="tab" aria-controls="v-pills-goal1" aria-selected="true">Goal</button>
+                            <button class="nav-link" id="v-pills-team1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-team1" type="button" role="tab" aria-controls="v-pills-team1" aria-selected="false">Team</button>
+                            <button class="nav-link" id="v-pills-upnext1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upnext1" type="button" role="tab" aria-controls="v-pills-upnext1" aria-selected="false">Up Next</button>
+                        </div>
+                        <!-- Navigation Content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-intro1" role="tabpanel" aria-labelledby="v-pills-intro1-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <img src="./assets/images/birdeeGraphic.png" class="img-fluid rounded-start" alt="BIRDEE logo">
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction</h5>
+                                            <p class="card-text">Intended to address the persistent underrepresentation of girls in engineering careers, BIRDIE developed a curriculum integrating biologically-inspired engineering into a five-week lab experience. In recent months, BIRDIE revamped its curriculum and requested a website to host its resources.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="v-pills-goal1" role="tabpanel" aria-labelledby="v-pills-goal1-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="21964285" data-share-method="host" data-aspect-ratio="1.33333" data-width="90%"><a href="https://tenor.com/view/dog-goal-gif-21964285">Dog Goal GIF</a>from <a href="https://tenor.com/search/dog+goal-gifs">Dog Goal GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Rationale</h5>
+                                                <p class="card-text">Hosting a curriculum online eases the delivery and offers users the most recent updated resources.</p>
+                                                <h5 class="card-title">Goal</h5>
+                                                <p class="card-text">To create an instructional website from which teachers can explore and teach using BIRDEE curriculum.</p>
+                                                <h5 class="card-title">Target Audience</h5>
+                                                <p class="card-text">Primary Audience: K-12 Teachers and Students<br>Secondary Audience: School Administration, School Boards, Parents</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-team1" role="tabpanel" aria-labelledby="v-pills-team1-tab">
+                                <div class="card mb-3 border-0 marTopper">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="16913358" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/were-a-dream-team-andy-samberg-jake-peralta-andre-braugher-raymond-holt-gif-16913358"></a>from <a href="https://tenor.com/search/were+a+dream+team-gifs"></a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold">Roxanne Moore<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder</span></p>
+                                                <p class="card-text fw-bold">Julia Varnedoe<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder, Project Manager, Content, Testing</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold">Mike Helms<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder</span></p>
+                                                <p class="card-text fw-bold">Love Park (Me!)<br><span class="card-text fw-normal fst-italic">Development, Content, Design, Testing, Maintenance, Management</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-upnext1" role="tabpanel" aria-labelledby="v-pills-upnext1-tab">
+                                <div class="card mb-3 border-0 marTopper">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="22272454" data-share-method="host" data-aspect-ratio="1" data-width="90%"><a href="https://tenor.com/view/adaptivity-todo-gif-22272454">Adaptivity Todo Sticker</a>from <a href="https://tenor.com/search/adaptivity-stickers">Adaptivity Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="card-title">Up Next</h5>
+                                            <p class="card-text fw-bold">Research and Ideation<br><span class="fw-normal fst-italic">Conduct Stakeholder and Teacher Interview and Miro Board, Peer/Competitive Analysis</span></p>
+                                            <p class="card-text fw-bold">Wireframes<br><span class="fw-normal fst-italic">Learn how to create wireframes and implement for BIRDEE, receive stakeholder feedback using wireframes prior to prototyping</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content: K-12 InVenture Prize -->
+    <div class="container-fluid shadow">
+        <div class="d-grid gap-3">
+            <div class="card cardmx border-light marTopper">
+                <div class="row">
+                    <h4 class="card-title text-end">K-12 InVenture Prize<br></h4>
+                </div>
+                <div class="row g-0">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-intro2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-intro2" type="button" role="tab" aria-controls="v-pills-intro2" aria-selected="true">Introduction</button>
+                            <button class="nav-link" id="v-pills-goal2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-goal2" type="button" role="tab" aria-controls="v-pills-goal2" aria-selected="true">Goal</button>
+                            <button class="nav-link" id="v-pills-team2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-team2" type="button" role="tab" aria-controls="v-pills-team2" aria-selected="false">Team</button>
+                            <button class="nav-link" id="v-pills-research2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-research2" type="button" role="tab" aria-controls="v-pills-research2" aria-selected="false">Research</button>
+                            <button class="nav-link" id="v-pills-upnext2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upnext2" type="button" role="tab" aria-controls="v-pills-upnext2" aria-selected="false">Up Next</button>
+                        </div>
+                        <!-- Navigation Content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-intro2" role="tabpanel" aria-labelledby="v-pills-intro2-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <img src="./assets/images/k12inventureGraphic.png" class="img-fluid rounded-start" alt="K-12 InVenture Prize logo">
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Introduction</h5>
+                                            <p class="card-text">An off branch of Georgia Tech's InVenture Prize, the K-12 InVenture Prize offers invention curriculum and competition to K-12 audiences across Georgia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="v-pills-goal2" role="tabpanel" aria-labelledby="v-pills-goal2-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="17844235" data-share-method="host" data-aspect-ratio="1" data-width="90%"><a href="https://tenor.com/view/idea-bulb-light-blink-shake-gif-17844235">Idea Bulb Sticker</a>from <a href="https://tenor.com/search/idea-stickers">Idea Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Rationale</h5>
+                                                <p class="card-text">As innovation and entrepreneurship become more prominent in the state's and country's initiatives to develop the next generation of engineers and entrepreneurs, the K-12 InVenture Prize seeks to improve its digital infrastructure. </p>
+                                                <h5 class="card-title">Goal</h5>
+                                                <p class="card-text">To redesign the program main site for teachers to explore and utilize our K-12 invention resources and competition with their classrooms.</p>
+                                                <h5 class="card-title">Target Audience</h5>
+                                                <p class="card-text">Primary Audience: K-12 Teachers and Students<br>Secondary Audience: School Administration, School Boards, Parents</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-team2" role="tabpanel" aria-labelledby="v-pills-team2-tab">
+                                <div class="card mb-3 border-0 marTopper">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <br>
+                                            <div class="tenor-gif-embed" data-postid="11883251" data-share-method="host" data-aspect-ratio="1.335" data-width="90%"><a href="https://tenor.com/view/best-team-best-team-ever-work-coworkers-when-you-love-your-coworkers-gif-11883251">Working With The Best Team Ever! GIF</a>from <a href="https://tenor.com/search/best+team-gifs">Best Team GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold">Roxanne Moore<br><span class="card-text fw-normal fst-italic">Project Sponsor, Stakeholder</span></p>
+                                                <p class="card-text fw-bold">Jasmine Patel<br><span class="card-text fw-normal fst-italic">Stakeholder, Content</span></p>
+                                                <p class="card-text fw-bold">Love Park (Me!)<br><span class="card-text fw-normal fst-italic">Development, Content, Design, Testing, Maintenance, Management</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-research2" role="tabpanel" aria-labelledby="v-pills-research2-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./assets/images/audit2.png" class="img-fluid rounded-start" alt="calendar invite">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Website Platform Research</h5>
+                                                <p class="card-text">The website is currently using Drupal 7 and in need of a migration to Drupal 9 or across platforms. I am currently working with another Web Developer to determine the best fit for our needs.</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Website Content Audit</h5>
+                                                <p class="card-text">Conducting a content audit of our existing 39+ pages, I found opportunities to update, archive, and add content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-upnext2" role="tabpanel" aria-labelledby="v-pills-upnext2-tab">
+                                <div class="card mb-3 border-0 marTopper">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="23834932" data-share-method="host" data-aspect-ratio="1" data-width="90%"><a href="https://tenor.com/view/sampsoid-next-time-racing-gif-23834932">Sampsoid Next Time Sticker</a>from <a href="https://tenor.com/search/sampsoid-stickers">Sampsoid Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="card-title">Up Next</h5>
+                                            <p class="card-text fw-bold">Research<br><span class="fw-normal fst-italic">Conduct Website Evaluation with Direct Feedback from Teachers, Stakeholder Interview for Potential Curriculum Migration to Website</span>
+                                            <p class="card-text fw-bold">Wireframe<br><span class="fw-normal fst-italic">Migrate to Drupal 9 or to another platform</span></p>
+                                            <p class="card-text fw-bold">Website Migration<br><span class="fw-normal fst-italic">Learn how to create wireframes and implement for K-12 InVenture Prize, receive stakeholder feedback using wireframes prior to prototyping</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content: STEM-ID -->
+    <div class="container-fluid shadow">
+        <div class="d-grid gap-3">
+            <div class="card cardmx border-light marTopper">
+                <div class="row">
+                    <h4 class="card-title text-end">STEM-ID<br></h4>
+                </div>
+                <div class="row g-0">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-intro3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-intro3" type="button" role="tab" aria-controls="v-pills-intro3" aria-selected="true">Introduction</button>
+                            <button class="nav-link" id="v-pills-upnext3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-upnext3" type="button" role="tab" aria-controls="v-pills-upnext3" aria-selected="false">Up Next</button>
+                        </div>
+                        <!-- Navigation Content -->
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-intro3" role="tabpanel" aria-labelledby="v-pills-intro3-tab">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <img src="./assets/images/stemidGraphic.png" class="img-fluid rounded-start" alt="STEM ID logo">
+                                    </div>
+                                    <div class="row g-0">
+                                        <h5 class="card-title">Introduction</h5>
+                                         <p class="card-text">STEM-ID is a revitalization project for STEM-Innovation and Engineering Design Curricula, which will involve a complete rebranding and website to host its curriculum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-upnext3" role="tabpanel" aria-labelledby="v-pills-upnext3-tab">
+                                <div class="card mb-3 border-0 marTopper">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <div class="tenor-gif-embed" data-postid="16405379" data-share-method="host" data-aspect-ratio="1.11111" data-width="90%"><a href="https://tenor.com/view/the-office-question-dwight-schrute-dwight-question-mark-gif-16405379">The Office Question GIF</a>from <a href="https://tenor.com/search/the+office-gifs">The Office GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="card-title">Up Next</h5>
+                                            <p class="card-text fw-bold">My Role<br><span class="fw-normal fst-italic">Clarification for My Role</span>
+                                            <p class="card-text fw-bold">Research<br><span class="fw-normal fst-italic">Anticipating Conclusion from External Group's Stakeholder Survey (Completed Survey December 2021)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content: Marketing -->
+    <div class="container-fluid shadow">
+        <div class="d-grid gap-3">
+            <div class="card cardmx border-light marTopper">
+                <div class="row">
+                    <h4 class="card-title text-end">Marketing and Social Media<br></h4>
+                </div>
+                <!-- Nav Tabs for Type of Content -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-flyers-tab" data-bs-toggle="tab" data-bs-target="#nav-flyers" type="button" role="tab" aria-controls="nav-flyers" aria-selected="true">Flyers</button>
+                      <button class="nav-link" id="nav-social-tab" data-bs-toggle="tab" data-bs-target="#nav-social" type="button" role="tab" aria-controls="nav-social" aria-selected="false">Social Media</button>
+                    </div>
+                  </nav>
+                  <!-- Nav Content -->
+                  <div class="tab-content" id="nav-tabContent">
+                    <!-- FLYERS -->
+                    <div class="tab-pane fade show active" id="nav-flyers" role="tabpanel" aria-labelledby="nav-flyers-tab">
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/FlyerK122022.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                    <div class="card-footer">
+                                        <small class="text-muted">2022 Judge Recruitment Flyer, Audience: Industry Partners & Georgia Tech Faculty and Students, Adobe Illustrator</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/FlyerYVIP2022.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                    <div class="card-footer">
+                                        <small class="text-muted">2021 Event Flyer, Audience: K-12 students and families, Adobe Illustrator</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/FlyerYVIP2021.png" class="card-img-top" alt="YVIP Flyer for Judges">
+                                    <div class="card-footer">
+                                        <small class="text-muted">2021 Your Voice is Power Flyer, Audience: K-12 teachers and students, Adobe Illustrator</small>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <br>
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/MiniFlyer1.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                    <div class="card-footer">
+                                        <small class="text-muted">2021 Event Mini Flyer, Audience: K-12 teachers, Canva</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/MiniFlyer2.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                    <div class="card-footer">
+                                        <small class="text-muted">2021 Save the Date Mini Flyer, Audience: K-12 audiences, Canva</small>
+                                    </div>
+                                </div>
+                            </div>                      
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body text-center about-desc">
-                    	<h5>UX Designer + Developer</h5>
-                    	<br>
-                        <p class="card-text">
-                        	Having a multidisciplinary background, my portfolio integrates research insights with user interface design to improve the user experience.
-                       		<br><br>If you think I would be a good fit for your team, please reach out to chat!
-                       	</p>
+                    <!-- Social Media -->
+                    <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
+                        <br>
+                        <div class="row g-0">
+                            <p>Typically designed on Canva, Adobe Illustrator, and Adobe Photoshop</p>
+                        </div>
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM1.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM2.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM3.png" class="card-img-top" alt="YVIP Flyer for Judges">
+                                </div>
+                            </div>                      
+                        </div>
+                        <br> 
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM4.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM5.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM6.png" class="card-img-top" alt="YVIP Flyer for Judges">
+                                </div>
+                            </div>                      
+                        </div>
+                        <br> 
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM7.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM8.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM9.png" class="card-img-top" alt="YVIP Flyer for Judges">
+                                </div>
+                            </div>                      
+                        </div>
+                        <br>  
+                        <div class="row g-0">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM10.png" class="card-img-top" alt="K-12 InVenture Prize Flyer for Judges">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM11.png" class="card-img-top" alt="YVIP Flyer for Launch Party">
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/images/marketingPortfolio/SM12.png" class="card-img-top" alt="YVIP Flyer for Judges">
+                                </div>
+                            </div>                      
+                        </div>
+                        <br>    
                     </div>
                 </div>
-            </div>
-            <br>
-            <!-- About Content: Multidisciplinary Developer -->
-            <div class="card cv-desc">
-            	<h3>Strengths</h3>
-            	<br>
-            	<div class="row">
-	                <div class="col">
-	                    <img class="img-fluid w-100 animateDown" data-delay="0.5s" alt="cv" src="./images/about_cv.png"/>
-	                </div>
-	          	</div>
-	          	<div class="row stagDelay" data-delay="1s">
-	                <div class="col-4">
-	                    <div class="card-body">
-	                        <h6 class="card-title">Analytically Attentive</h6>
-	                        <p class="card-text">Effectively collects, analyzes, and utilizes qualitative and quantitative data to drive decisions.</p>
-	                    </div>
-	                </div>
-	                <div class="col-4">
-	                    <div class="card-body">
-	                        <h6 class="card-title">Consistently Delivers Results</h6>
-	                        <p class="card-text">Creates and pushes products / measureables into the real world.</p>
-	                    </div>
-	                </div>
-	                <div class="col-4">
-	                    <div class="card-body">
-	                        <h6 class="card-title">Relationship-Driven Leadership</h6>
-	                        <p class="card-text">Builds positive relationships, mediates conflict, and motivates others to take action.</p>
-	                    </div>
-	                </div>
-	            </div>
-            </div>
-            <br>
-            <div class="card cv-table">
-	            <h3 class="animateDown" data-delay="0.5s">Multidisciplinary Developer</h3>
-	            <br>
-            	<table class="table">
-	                <thead>
-	                    <tr class="stagDelay" data-delay="1s">
-	                        <td scope="col"></td>
-	                        <td scope="col">Research</td>
-	                        <td scope="col">Code</td>
-	                        <td scope="col">Communication</td>
-	                    </tr>
-	                </thead>
-	                <tbody>
-	                    <tr>
-	                        <td scope="row" class="stagDelay" data-delay="1s">Advanced</td>
-	                        <td></td>
-	                        <td></td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="2s" alt="communication advanced" src="./images/about_multidiscCommunication.png"/></td>
-	                    </tr>
-	                    <tr>
-	                        <td scope="row" class="stagDelay" data-delay="1s">Intermediate</td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" alt="research intermediate" src="./images/about_multidiscResearch.png"/></td>
-	                        <td></td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.75s" alt="communication intermediate" src="./images/about_multidiscCommunication.png"/></td>
-	                    </tr>
-	                    <tr>
-	                        <td scope="row" class="stagDelay" data-delay="1s">Elementary</td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="research elementary" src="./images/about_multidiscResearch.png"/></td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="code elementary" src="./images/about_multidiscCode.png"/></td>
-	                        <td><img class="img-fluid animateUp" id="tableImage" data-delay="1.5s" alt="communication elementary" src="./images/about_multidiscCommunication.png"/></td>
-	                    </tr>
-	                    <tr>
-	                        <td scope="row" class="stagDelay" data-delay="1s">Beginner</td>
-	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="research beginner" src="./images/about_multidiscResearch.png"/></td>
-	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="code beginner" src="./images/about_multidiscCode.png"/></td>
-	                        <td><img class="img-fluid stagDelay" id="tableImage" data-delay="1.25s" alt="communication beginner" src="./images/about_multidiscCommunication.png"/></td>
-	                    </tr>
-	                </tbody>
-	            </table>
             </div>
         </div>
-        <!-- Section: Skills -->  
-        <div class="container-fluid panel" id="skills" data-color="skills">
-            <div class="animateDown" data-delay="0.5s">
-                <h2>SKILLS</h2>
-                <h3>UX Designer + Developer</h3>
-            </div>
-            <br>
-            <div class="card skills-ux">
-            	<div class="row">
-            		<div class="col-sm-12 col-md-12 col-lg-6">
-            			<h4 class="animateDown" data-delay="1s">User Centered Research</h4>
-            			<br>
-            			<div class="row">
-            				<div class="col-4 my-auto">Research Design</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-research">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Interviewing</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-interview">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Creating and Administering Tests</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-testing">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Collecting and Organizing Data</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-gatherData">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Data Analysis</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-dataAnalysis">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Presenting Findings</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-research">
-            					<div class="bar-skill-findings">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<br>
-            		</div>
-            		<div class="col-sm-12 col-md-12 col-lg-6">
-            			<h4 class="animateDown" data-delay="1s">User Centered Design</h4>
-            			<br>
-            			<div class="row">
-            				<div class="col-4 my-auto">UX Sketching</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
-            					<div class="bar-skill-sketch">
-            						<div class="bar" data-value="Beginner"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Prototyping</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
-            					<div class="bar-skill-prototyping">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Interface Layout and Design</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
-            					<div class="bar-skill-interface">
-            						<div class="bar" data-value="Intermediate"></div>
-            					</div>
-            				</div>
-            			</div>
-            			<div class="row">
-            				<div class="col-4 my-auto">Adobe XD</div>
-            				<div class="col-8 my-auto bar-graph bar-graph-horizontal bar-graph-design">
-            					<div class="bar-skill-adobexd">
-            						<div class="bar" data-value="Beginner"></div>
-            					</div>
-            				</div>
-            			</div>
-            		</div>
-            	</div>
-            </div>
-			<br>
-            <div class="card skills-dev">
-            	<div class="row">
-	            	<div class="col-sm-12 col-md-12 col-lg-6">
-	            		<h4 class="animateDown" data-delay="1s">Front End & Back End Programming Languages</h4>
-	            		<table class="table">
-			                <thead>
-			                    <tr class="stagDelay" data-delay="0.5s">
-			                        <td scope="col"></td>
-			                        <td scope="col">Beginner</td>
-			                        <td scope="col">Elementary</td>
-			                        <td scope="col">Intermediate</td>
-			                    </tr>
-			                </thead>
-			                <tbody>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">HTML5</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="html beginner" src="./images/skills_html.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="html elementary" src="./images/skills_html.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="html intermediate" src="./images/skills_html.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">CSS</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="css beginner" src="./images/skills_css.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="css elementary" src="./images/skills_css.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="css intermediate" src="./images/skills_css.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">Bootstrap</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="bootstrap beginner" src="./images/skills_bootstrap.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="bootstrap elementary" src="./images/skills_bootstrap.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="bootstrap intermediate" src="./images/skills_bootstrap.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">Javascript</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="javascript beginner" src="./images/skills_javascriptjquery.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="javascript elementary" src="./images/skills_javascriptjquery.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">jQuery</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="jquery beginner" src="./images/skills_javascriptjquery.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="jquery elementary" src="./images/skills_javascriptjquery.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">Java</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="java beginner" src="./images/skills_java.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="java elementary" src="./images/skills_java.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="3s" alt="java intermediate" src="./images/skills_java.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">SQL</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="sql beginner" src="./images/skills_sql.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="sql elementary" src="./images/skills_sql.png"/></td>
-			                    </tr>
-			                </tbody>
-			            </table>
-			            <br>
-			            <br>
-			            <br>
-	            	</div>
-	            	<div class="col-sm-12 col-md-12 col-lg-6">
-	            		<h4 class="animateDown" data-delay="1s">Frameworks, Version Control, and other tools</h4>
-			            <table class="table">
-			                <thead>
-			                    <tr class="stagDelay" data-delay="0.5s">
-			                        <td scope="col"></td>
-			                        <td scope="col">Beginner</td>
-			                        <td scope="col">Elementary</td>
-			                        <td scope="col">Intermediate</td>
-			                    </tr>
-			                </thead>
-			                <tbody>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">RESTful APIs</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="api beginner" src="./images/skills_api.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="api elementary" src="./images/skills_api.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">SpringBoot</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="springboot beginner" src="./images/skills_springboot.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="springboot elementary" src="./images/skills_springboot.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">Heroku</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s"  alt="heroku beginner" src="./images/skills_heroku.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="heroku elementary" src="./images/skills_heroku.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">Git / GitHub</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="git beginner" src="./images/skills_gitgithub.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="git elementary" src="./images/skills_gitgithub.png"/></td>
-			                    </tr>
-			                    <tr>
-			                        <td scope="row" class="stagDelay" data-delay="0.5s">R</td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="1s" alt="r beginner" src="./images/skills_r.png"/></td>
-			                        <td><img class="img-fluid animateLeft" id="tableImage" data-delay="2s" alt="r elementary" src="./images/skills_r.png"/></td>
-			                    </tr>
-			                </tbody>
-			            </table>
-	           		</div>
-	           	</div>
-	        </div>
-        </div>
-        <!-- Section: Portfolio -->
-        <div class="container-fluid panel" id="portfolio" data-color="portfolio">
-            <div class="row stagDelay" data-delay="0.5s">
-                <div class="col-6">
-                    <div class="coffee">
-                        <div class="coffeeSmoke coffeeSmokeOne"></div>
-                        <div class="coffeeSmoke coffeeSmokeTwo"></div>
-                        <div class="coffeeSmoke coffeeSmokeThree"></div>
-                        <div class="coffeeCup"></div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <h2 class="animateDown" data-delay="0.5s">PORTFOLIO</h2>
-                    <!-- Portfolio Content: Coming Soon -->
-                    <h4 id="emphasize">Coming Soon</h4>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-        <!-- Section: Connect -->
-        <div class="container-fluid panel" id="connect" data-color="contact">
-            <h2>Connect with Love</h2>
-            <!-- Connect Content: Form -->
-            <form action="" method="post">
-                <div class="form-group row">
-                    <label for="name" class="col-sm-2 col-md-1 col-form-label text-left">Name</label>
-                    <div class="col">
-                        <input type="text" class="form-control" id="name" required="required">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="email" class="col-sm-2 col-md-1 col-form-label text-left">Email</label>
-                    <div class="col">
-                        <input type="email" class="form-control" id="email" required="required">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="subject" class="col-sm-2 col-md-1 col-form-label text-left">Subject</label>
-                    <div class="col">
-                        <input type="text" class="form-control" id="subject" required="required">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="message" class="col-sm-2 col-md-1 col-form-label text-left">Message</label>
-                    <div class="col">
-                        <textarea class="form-control" rows="5" id="message" required="required"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-lg btn-block btn-primary">Send Message</button>
-            </form>
-        </div>
-        <!-- Section: Footer -->
-        <div class="footer">
-            <div class="progress-container">
-                <div class="progress-bar" id="bar"></div>
-            </div>
-        </div>
-        <footer>
-            <div class="row">
-                <div class="col-6 text-left">
-                    <p>&copy; 2020 Love Park</p>
-                </div>
-                <div class="col-6 text-right">
-                    <p>All Rights Reserved</p>
-                </div>
-            </div>
+    </div>
+    <div class="container-fluid colorMe" id="about">
+        <h3 class="pt-5 px-5">Hi, there!<br><br>About Me</h3>
+        <p class="px-5">My name is Love Park. I am an Educational Outreach Coordinator at Georgia Tech's Center for Education Integrating Science, Mathematics, and Computing. I am applying to Georgia Tech's Master's Program in Human-Computer Interaction and seeking to align my career and educational objectives in advancing K-12 STEAM education using human-computer interaction. Having been a classroom teacher and currently working on our projects' web design/development, I would love to learn how to create experiences that engage the interests of our culturally diverse K-12 audiences.</p>
+        <p class="pb-5 px-5">I enjoy the occasional indoor cycling and yoga to balance my love for food.:)</p>
+        <footer class="colorMe">
+            <p class="text-center pb-1" id="lightThis">Design and Code by Love in Atlanta, GA</p>
         </footer>
-        <!-- SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./javascript/main.js"></script>
-    </body>
+    </div>
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
 </html>
